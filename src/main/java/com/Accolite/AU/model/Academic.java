@@ -11,8 +11,6 @@ import javax.persistence.IdClass;
 @IdClass(AcademicKey.class)
 public class Academic {
 	
-	
-	float score;
 	String feedback;
 
 	@Id
@@ -25,15 +23,6 @@ public class Academic {
 	@Column(name="course_id")
 	String course_id;
 	
-	
-	
-	public float getScore() {
-		return score;
-	}
-
-	public void setScore(float score) {
-		this.score = score;
-	}
 
 	public String getFeedback() {
 		return feedback;
@@ -59,40 +48,15 @@ public class Academic {
 		this.course_id = course_id;
 	}
 
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((candidate_id == null) ? 0 : candidate_id.hashCode());
-		result = prime * result + ((course_id == null) ? 0 : course_id.hashCode());
-		return result;
+	public Academic(String feedback, String candidate_id, String course_id) {
+		super();
+		this.feedback = feedback;
+		this.candidate_id = candidate_id;
+		this.course_id = course_id;
 	}
 
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Academic other = (Academic) obj;
-		if (candidate_id == null) {
-			if (other.candidate_id != null)
-				return false;
-		} else if (!candidate_id.equals(other.candidate_id))
-			return false;
-		if (course_id == null) {
-			if (other.course_id != null)
-				return false;
-		} else if (!course_id.equals(other.course_id))
-			return false;
-		return true;
+	public Academic() {
+		super();
 	}
 
-	@Override
-	public String toString() {
-		return "Academic [score=" + score + ", feedback=" + feedback + ", candidate_id=" + candidate_id + ", course_id="
-				+ course_id + "]";
-	}
 }

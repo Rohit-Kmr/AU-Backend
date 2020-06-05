@@ -1,8 +1,13 @@
 package com.Accolite.AU.controller;
 
-import java.util.Optional;
+import java.util.List;
+
+import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,44 +16,55 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.util.UriComponentsBuilder;
 
+import com.Accolite.AU.Service.IAcademicService;
 import com.Accolite.AU.model.Academic;
-import com.Accolite.AU.repository.AcademicRepository;
 
 
 @RestController
-@CrossOrigin(origins="http://localhost:4200")
+@CrossOrigin
 @RequestMapping("/Academic")
 public class AcademicController {
 	
 	@Autowired
-	AcademicRepository academicRepo;
+	IAcademicService academicService;
 	
 	@GetMapping("/getDetails")
-	public Iterable<Academic> getAllAcademicDetails(){
-		return academicRepo.findAll();
+	public ResponseEntity<List<Academic>> getAllAcademicDetails(){
+		List<Academic> list=academicService.getAllAcademic();
+		return new ResponseEntity<List<Academic>>(list,HttpStatus.OK);
 	}
 	
 	@GetMapping("/getDetails/{id}")
-	public Optional<Academic> getAcademicDetail(@PathVariable("id") String id){
-		return academicRepo.findById(id);
+	public ResponseEntity<List<Academic>> getAcademicDetailByCourse(@PathVariable("id") String id){
+		List<Academic> list=academicService.getAcademicByCourseid(id);
+		return new ResponseEntity<List<Academic>>(list,HttpStatus.OK);
 	}
 	
-	@PutMapping("/updateDetails/{id}")
-	public void updateAcademicDetail(@PathVariable("id") String id,@RequestBody Academic course){
-		academicRepo.deleteById(id);
-		academicRepo.save(course);
+/*	@GetMapping("/getDetailsByCandidate/{id}")
+	public ResponseEntity<List<Academic>> getAcademicDetailByCandidate(@PathVariable("id") String id){
+		List<Academic> list=academicService.getAcademicByCandidateid(id);
+		return new ResponseEntity<List<Academic>>(list,HttpStatus.OK);
+	}
+	
+	@PutMapping("/updateDetails")
+	public ResponseEntity<Academic> updateAcademicDetail(@RequestBody Academic academic){
+		academicService.updateAcademic(academic);
+		return new ResponseEntity<Academic>(academic,HttpStatus.OK);
 	}
 	
 	@PostMapping("/addDetails")
-	public void addAcademicDetail(@RequestBody Academic course){
-		academicRepo.save(course);
+	public ResponseEntity<Void> addAcademicDetail(@RequestBody Academic academic,UriComponentsBuilder builder){
+		academicService.addAcademic(academic);
+		return new ResponseEntity<Void>(HttpStatus.CREATED);
 	}
 	
-	@DeleteMapping("/deleteDetails/id")
+	@DeleteMapping("/deleteDetails/{id}")
 	public void deleteAcademicDetail(@PathVariable("id") String id){
-		academicRepo.deleteById(id);;
+		academicService.deleteAcademicByCourseId(id);
 	}
-
+	*/
 }

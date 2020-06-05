@@ -2,46 +2,50 @@ package com.Accolite.AU.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
 public class Course {
 	
-	String courseDesc;
+	String course_desc;
 	String trainer_id;
 	String skills;
 	String prerequisite;
+	String trainer_name;
 	
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
 	@Column(name="course_id")
 	String course_id;
 	
 	public Course() {
 		super();
 	}
-	public Course(String course_id, String courseDesc, String trainer_id, String skills, String prerequisite) {
+	public Course(String course_id, String course_desc, String trainer_id, String skills, String prerequisite,String trainer_name) {
 		super();
 		this.course_id = course_id;
-		this.courseDesc = courseDesc;
+		this.course_desc = course_desc;
 		this.trainer_id = trainer_id;
 		this.skills = skills;
 		this.prerequisite = prerequisite;
+		this.trainer_name=trainer_name;
 	}
-	
-	public String getId() {
+	public String getTrainer_name() {
+		return trainer_name;
+	}
+	public void setTrainer_name(String trainer_name) {
+		this.trainer_name = trainer_name;
+	}
+	public String getCourseId() {
 		return course_id;
 	}
-	public void setId(String course_id) {
+	public void setCourseId(String course_id) {
 		this.course_id = course_id;
 	}
-	public String getCourseDesc() {
-		return courseDesc;
+	public String getCourse_desc() {
+		return course_desc;
 	}
-	public void setCourseDesc(String courseDesc) {
-		this.courseDesc = courseDesc;
+	public void setCourseDesc(String course_desc) {
+		this.course_desc = course_desc;
 	}
 	public String getTrainer_id() {
 		return trainer_id;
@@ -58,37 +62,8 @@ public class Course {
 	public String getPrerequisite() {
 		return prerequisite;
 	}
-	public void setPrerequisites(String prerequisite) {
+	public void setPrerequisite(String prerequisite) {
 		this.prerequisite = prerequisite;
-	}
-	
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((course_id == null) ? 0 : course_id.hashCode());
-		return result;
-	}
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Course other = (Course) obj;
-		if (course_id == null) {
-			if (other.course_id != null)
-				return false;
-		} else if (!course_id.equals(other.course_id))
-			return false;
-		return true;
-	}
-	@Override
-	public String toString() {
-		return "Course [id=" + course_id + ", courseDesc=" + courseDesc + ", trainer_id=" + trainer_id + ", skills=" + skills
-				+ ", prerequisite=" + prerequisite + "]";
 	}
 
 }
