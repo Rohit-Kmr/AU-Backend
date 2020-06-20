@@ -19,7 +19,7 @@ import com.Accolite.AU.Service.IAssessmentService;
 import com.Accolite.AU.model.Assessment;
 
 @RestController
-@CrossOrigin
+@CrossOrigin("*")
 @RequestMapping("/Assessment")
 public class AssessmentController {
 	@Autowired

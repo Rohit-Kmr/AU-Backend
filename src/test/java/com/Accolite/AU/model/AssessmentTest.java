@@ -21,13 +21,13 @@ public class AssessmentTest {
 		assertEquals("somename",tester.getAssessment_type());
 		
 		tester.setWeightage1((float) 20.34);
-		assertEquals(20.34,tester.getWeightage1());
+		assertEquals((float)20.34,(float)tester.getWeightage1());
 		
 		tester.setWeightage2((float) 78.34);
-		assertEquals(78.34,tester.getWeightage2());
+		assertEquals((float)78.34,(float)tester.getWeightage2());
 		
 		tester.setWeightage3((float) 56.62);
-		assertEquals(56.62,tester.getWeightage3());
+		assertEquals((float)56.62,(float)tester.getWeightage3());
 		
 	}
 

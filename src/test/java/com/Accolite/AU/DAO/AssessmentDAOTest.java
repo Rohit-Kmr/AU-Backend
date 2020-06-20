@@ -17,7 +17,7 @@ class AssessmentDAOTest {
 	
 	@Test
 	void testGetAllAssessment() {
-		assertEquals(2,tester.getAllAssessment().size());
+		assertEquals(5,tester.getAllAssessment().size());
 	}
 
 	@Test
@@ -28,11 +28,6 @@ class AssessmentDAOTest {
 	@Test
 	void testUpdateAssessment() {
 		tester.updateAssessment("test",new Assessment("Type2",(float) 60.25,(float)57,(float) 75,"TU01","TAS00"));
-	}
-	
-	@Test
-	void testGetAssessmentById() {
-		assertNotNull(tester.getAssessmentById("TAS00"));
 	}
 	
 	@Test

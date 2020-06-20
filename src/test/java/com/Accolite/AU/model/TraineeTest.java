@@ -20,13 +20,13 @@ class TraineeTest {
 		assertEquals("somename",tester.getTrainee_name());
 		
 		tester.setPercentage1((float) 20.34);
-		assertEquals(20.34,tester.getPercentage1());
+		assertEquals((float)20.34,(float)tester.getPercentage1());
 		
 		tester.setPercentage2((float) 78.34);
-		assertEquals(78.34,tester.getPercentage2());
+		assertEquals((float)78.34,(float)tester.getPercentage2());
 		
 		tester.setPercentage3((float) 56.62);
-		assertEquals(56.62,tester.getPercentage3());
+		assertEquals((float)56.62,(float)tester.getPercentage3());
 		
 	}
 

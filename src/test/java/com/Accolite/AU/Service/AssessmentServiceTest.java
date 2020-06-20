@@ -17,7 +17,7 @@ public class AssessmentServiceTest {
 	
 	@Test
 	void testGetAllAssessment() {
-		assertEquals(2,tester.getAllAssessment().size());
+		assertEquals(5,tester.getAllAssessment().size());
 	}
 
 	@Test

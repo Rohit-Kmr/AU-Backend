@@ -17,7 +17,7 @@ class TraineeServiceTest {
 	
 	@Test
 	void testGetAllTrainee() {
-		assertEquals(4,tester.getAllTrainee().size());
+		assertEquals(8,tester.getAllTrainee().size());
 	}
 
 	@Test

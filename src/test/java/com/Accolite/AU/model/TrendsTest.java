@@ -30,7 +30,7 @@ class TrendsTest {
 	void testGetAvarage_score() {
 
 		tester.setAvarage_score(42);
-		assertEquals(32,tester.getAvarage_score());
+		assertEquals(42,tester.getAvarage_score());
 	}
 
 }
