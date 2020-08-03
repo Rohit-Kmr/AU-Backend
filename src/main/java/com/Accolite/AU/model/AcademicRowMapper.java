@@ -10,8 +10,8 @@ public class AcademicRowMapper implements RowMapper<Academic>{
 	@Override
 	public Academic mapRow(ResultSet rs, int rowNum) throws SQLException {
 		Academic academic=new Academic();
-		academic.setCandidate_id(rs.getString("candidate_id"));
-		academic.setCourse_id(rs.getString("course_id"));
+		academic.setCandidateId(rs.getString("candidateId"));
+		academic.setCourseId(rs.getString("courseId"));
 		academic.setFeedback(rs.getString("feedback"));
 		return academic;
 	}

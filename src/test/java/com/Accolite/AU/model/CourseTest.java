@@ -11,7 +11,10 @@ public class CourseTest {
 		Course tester = new Course();
 		
 		tester.setCourseDesc("description");
-		assertEquals("description",tester.getCourse_desc());
+		assertEquals("description",tester.getCourseDesc());
+		
+		tester.setCourseName("Test name");
+		assertEquals("Test name",tester.getCourseName());
 		
 		tester.setCourseId("id1");
 		assertEquals("id1",tester.getCourseId());
@@ -22,11 +25,11 @@ public class CourseTest {
 		tester.setSkills("someskill");
 		assertEquals("someskill",tester.getSkills());
 		
-		tester.setTrainer_id("id2");
-		assertEquals("id2",tester.getTrainer_id());
+		tester.setTrainerId("id2");
+		assertEquals("id2",tester.getTrainerId());
 		
-		tester.setTrainer_name("somename");
-		assertEquals("somename",tester.getTrainer_name());
+		tester.setTrainerName("somename");
+		assertEquals("somename",tester.getTrainerName());
 	}
 
 }

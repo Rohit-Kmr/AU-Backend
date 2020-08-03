@@ -12,7 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.Accolite.AU.model.Course;
 import com.Accolite.AU.model.CourseRowMapper;
 
-@Transactional
+
 @Repository
 public class CourseDAO implements ICourseDAO {
 	
@@ -21,14 +21,14 @@ public class CourseDAO implements ICourseDAO {
 
 	@Override
 	public List<Course> getAllCourse() {
-		String sql="SELECT * FROM course";
+		String sql="SELECT courseId,courseName,courseDesc,trainerId,skills,prerequisite,trainerName FROM course";
 		RowMapper<Course> rowMapper=new CourseRowMapper();
 		return this.jdbcTemplate.query(sql, rowMapper);
 	}
 
 	@Override
 	public Course getCourseByid(String id) {
-		String sql="SELECT * FROM course WHERE course_id=?";
+		String sql="SELECT courseId,courseName,courseDesc,trainerId,skills,prerequisite,trainerName FROM course WHERE courseId=?";
 		RowMapper<Course> rowMapper=new BeanPropertyRowMapper<Course>(Course.class);
 		Course course= jdbcTemplate.queryForObject(sql, rowMapper,id);
 		return course;

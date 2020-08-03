@@ -1,0 +1,10 @@
+2020-07-04 13:10:34,690 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-4 housekeeper] HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=13h58m41s189ms875µs162ns).
+2020-07-04 13:11:19,619 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-8] Get Assessment Called
+2020-07-04 13:11:19,655 INFO c.A.A.c.TraineeController [http-nio-8080-exec-1] Get All Trainee Called
+2020-07-04 13:11:19,655 INFO c.A.A.c.CourseController [http-nio-8080-exec-10] Get course Called
+2020-07-04 13:11:19,707 INFO c.A.A.c.AcademicController [http-nio-8080-exec-6] Get Assessment Called with id AU0120
+2020-07-04 13:11:20,453 INFO c.A.A.c.TraineeController [http-nio-8080-exec-7] Get All Trainee Called
+2020-07-04 13:11:20,666 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-4] Get Assessment Called
+2020-07-04 13:11:20,665 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-4 housekeeper] HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=46s907ms983µs540ns).
+2020-07-04 13:11:22,730 INFO c.A.A.c.CourseController [http-nio-8080-exec-5] Get course Called
+2020-07-04 13:11:22,730 INFO c.A.A.c.AcademicController [http-nio-8080-exec-3] Get Assessment Called with id AU0120

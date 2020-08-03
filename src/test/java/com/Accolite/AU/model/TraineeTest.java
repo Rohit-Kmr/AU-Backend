@@ -10,14 +10,14 @@ class TraineeTest {
 	public void test() {
 		Trainee tester= new Trainee();
 		
-		tester.setAssessment_id("id1");
-		assertEquals("id1",tester.getAssessment_id());
+		tester.setAssessmentId("id1");
+		assertEquals("id1",tester.getAssessmentId());
 		
-		tester.setTrainee_id("id2");
-		assertEquals("id2",tester.getTrainee_id());
+		tester.setTraineeId("id2");
+		assertEquals("id2",tester.getTraineeId());
 		
-		tester.setTrainee_name("somename");
-		assertEquals("somename",tester.getTrainee_name());
+		tester.setTraineeName("somename");
+		assertEquals("somename",tester.getTraineeName());
 		
 		tester.setPercentage1((float) 20.34);
 		assertEquals((float)20.34,(float)tester.getPercentage1());

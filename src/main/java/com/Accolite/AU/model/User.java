@@ -4,16 +4,13 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-@Entity
 public class User {
 	
-	private String user_id;
+	private String userId;
 	private String name;	
 	private String type;
-	
-	@Id
-	@Column(name="email")
 	private String email;
+	
 	public String getEmail() {
 		return email;
 	}
@@ -22,11 +19,11 @@ public class User {
 	}
 	
 	public String getUserId() {
-		return user_id;
+		return userId;
 	}
 	
-	public void setUserId(String user_id) {
-		this.user_id = user_id;
+	public void setUserId(String userId) {
+		this.userId = userId;
 	}
 
 	public String getType() {
@@ -37,9 +34,9 @@ public class User {
 		this.type = type;
 	}
 	
-	public User(String user_id,String email, String name,String type) {
+	public User(String userId,String email, String name,String type) {
 		super();
-		this.user_id = user_id;
+		this.userId = userId;
 		this.email = email;
 		this.name = name;
 		this.type = type;

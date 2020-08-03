@@ -15,22 +15,22 @@ class TrendsTest {
 
 	@Test
 	void testGetTotal_courses() {
-		tester.setTotal_courses(42);
-		assertEquals(42,tester.getTotal_courses());
+		tester.setTotalCourses(42);
+		assertEquals(42,tester.getTotalCourses());
 	}
 
 	@Test
 	void testGetTotal_assessments() {
 
-		tester.setTotal_assessments(22);
-		assertEquals(22,tester.getTotal_assessments());
+		tester.setTotalAssessments(22);
+		assertEquals(22,tester.getTotalAssessments());
 	}
 
 	@Test
 	void testGetAvarage_score() {
 
-		tester.setAvarage_score(42);
-		assertEquals(42,tester.getAvarage_score());
+		tester.setAverageScore(42);
+		assertEquals(42,tester.getAverageScore());
 	}
 
 }

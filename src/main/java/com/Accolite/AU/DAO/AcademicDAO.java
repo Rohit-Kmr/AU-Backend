@@ -11,7 +11,6 @@ import org.springframework.transaction.annotation.Transactional;
 import com.Accolite.AU.model.Academic;
 import com.Accolite.AU.model.AcademicRowMapper;
 
-@Transactional
 @Repository
 public class AcademicDAO implements IAcademicDAO{
 
@@ -20,14 +19,14 @@ public class AcademicDAO implements IAcademicDAO{
 	
 	@Override
 	public List<Academic> getAllAcademic(){
-		String sql="SELECT * FROM academic";
+		String sql="SELECT candidateId,courseId,feedback FROM academic";
 		RowMapper<Academic> rowMapper=new AcademicRowMapper();
 		return this.jdbcTemplate.query(sql, rowMapper);
 	}
 
 	@Override
 	public List<Academic> getAcademicByCourseid(String id) {
-		String sql="SELECT * FROM academic WHERE course_id=? ";
+		String sql="SELECT candidateId,courseId,feedback FROM academic WHERE courseId=? ";
 		RowMapper<Academic> rowMapper=new AcademicRowMapper();
 		return jdbcTemplate.query(sql, rowMapper,id);
 	}

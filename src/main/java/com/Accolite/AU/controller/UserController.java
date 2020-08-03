@@ -2,6 +2,8 @@ package com.Accolite.AU.controller;
 
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -19,17 +21,22 @@ import com.Accolite.AU.model.User;
 @RequestMapping("/Users")
 public class UserController {
 	
+
+	   Logger log=LogManager.getLogger(UserController.class);
+	
 	   @Autowired
 	   private IUserService userService;
 		
 		@GetMapping("/getUser")
 		public ResponseEntity<List<User>> getAllUser(){
+			log.info("Get user Called");
 			List<User> list=userService.getAllUsers();
 			return new ResponseEntity<List<User>>(list,HttpStatus.OK);
 		}
 		
 		@GetMapping("/getUser/{id}")
 		public ResponseEntity<User> getUser(@PathVariable("id") String id){
+			log.info("Get user Called using email "+id);
 			User user=null;
 			user=userService.getUserByEmail(id);
 			return new ResponseEntity<User>(user,HttpStatus.OK);

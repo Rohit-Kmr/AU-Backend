@@ -1,0 +1,571 @@
+2020-07-03 12:36:55,353 INFO o.s.b.StartupInfoLogger [restartedMain] Starting AuApplication on DESKTOP-5DRKUTM with PID 4740 (C:\Users\Rohit\Documents\eclipse-work\AU\target\classes started by Rohit in C:\Users\Rohit\Documents\eclipse-work\AU)
+2020-07-03 12:36:55,398 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-07-03 12:36:55,522 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-03 12:36:55,522 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-03 12:36:59,835 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-03 12:36:59,909 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 45ms. Found 0 JPA repository interfaces.
+2020-07-03 12:37:02,167 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2020-07-03 12:37:02,248 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-03 12:37:02,248 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-07-03 12:37:02,250 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-03 12:37:02,464 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-07-03 12:37:02,465 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 6941 ms
+2020-07-03 12:37:03,858 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-03 12:37:04,171 INFO o.h.j.i.u.LogHelper [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-03 12:37:04,585 INFO o.h.Version [task-1] HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-07-03 12:37:11,205 INFO o.h.a.c.r.j.JavaReflectionManager [task-1] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-03 12:37:11,595 INFO c.z.h.HikariDataSource [task-1] HikariPool-1 - Starting...
+2020-07-03 12:37:11,965 INFO c.z.h.HikariDataSource [task-1] HikariPool-1 - Start completed.
+2020-07-03 12:37:12,113 INFO o.h.d.Dialect [task-1] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-07-03 12:37:13,458 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-03 12:37:13,519 INFO o.s.o.j.AbstractEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-03 12:37:14,020 INFO o.s.b.d.a.OptionalLiveReloadServer [task-2] LiveReload server is running on port 35729
+2020-07-03 12:37:15,129 WARN o.s.d.r.w.h.HalBrowser [restartedMain] ---
+2020-07-03 12:37:15,130 WARN o.s.d.r.w.h.HalBrowser [restartedMain] Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2020-07-03 12:37:15,130 WARN o.s.d.r.w.h.HalBrowser [restartedMain] ---
+2020-07-03 12:37:15,319 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-03 12:37:17,204 WARN o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-07-03 12:37:18,525 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-03 12:37:18,659 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2020-07-03 12:37:18,714 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-03 12:37:18,718 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Triggering deferred initialization of Spring Data repositories…
+2020-07-03 12:37:18,719 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Spring Data repositories initialized!
+2020-07-03 12:37:18,744 INFO o.s.b.StartupInfoLogger [restartedMain] Started AuApplication in 24.574 seconds (JVM running for 27.856)
+2020-07-03 12:38:35,248 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-03 12:38:35,248 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2020-07-03 12:38:35,327 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 78 ms
+2020-07-03 12:38:35,708 INFO c.A.A.c.TraineeController [http-nio-8080-exec-2] Get All Trainee Called
+2020-07-03 12:38:35,708 INFO c.A.A.c.CourseController [http-nio-8080-exec-1] Get course Called
+2020-07-03 12:38:35,749 INFO c.A.A.c.AcademicController [http-nio-8080-exec-5] Get Assessment Called with id AU0120
+2020-07-03 12:38:36,129 INFO c.A.A.c.AcademicController [http-nio-8080-exec-7] Get Assessment Called with id AU0120
+2020-07-03 12:38:36,144 INFO c.A.A.c.TraineeController [http-nio-8080-exec-7] Get All Trainee Called
+2020-07-03 12:38:36,144 INFO c.A.A.c.CourseController [http-nio-8080-exec-6] Get course Called
+2020-07-03 12:39:20,630 INFO o.s.o.j.AbstractEntityManagerFactoryBean [Thread-345] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-03 12:39:20,634 INFO o.s.s.c.ExecutorConfigurationSupport [Thread-345] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-03 12:39:20,639 INFO c.z.h.HikariDataSource [Thread-345] HikariPool-1 - Shutdown initiated...
+2020-07-03 12:39:20,654 INFO c.z.h.HikariDataSource [Thread-345] HikariPool-1 - Shutdown completed.
+2020-07-03 12:39:21,263 INFO o.s.b.StartupInfoLogger [restartedMain] Starting AuApplication on DESKTOP-5DRKUTM with PID 4740 (C:\Users\Rohit\Documents\eclipse-work\AU\target\classes started by Rohit in C:\Users\Rohit\Documents\eclipse-work\AU)
+2020-07-03 12:39:21,274 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-07-03 12:39:22,970 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-03 12:39:23,016 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 45ms. Found 0 JPA repository interfaces.
+2020-07-03 12:39:23,703 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2020-07-03 12:39:23,706 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-03 12:39:23,707 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-07-03 12:39:23,707 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-03 12:39:23,771 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-07-03 12:39:23,772 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2489 ms
+2020-07-03 12:39:24,013 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-03 12:39:24,040 INFO o.h.j.i.u.LogHelper [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-03 12:39:24,051 INFO c.z.h.HikariDataSource [task-1] HikariPool-2 - Starting...
+2020-07-03 12:39:24,061 INFO c.z.h.HikariDataSource [task-1] HikariPool-2 - Start completed.
+2020-07-03 12:39:24,062 INFO o.h.d.Dialect [task-1] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-07-03 12:39:24,102 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-03 12:39:24,103 INFO o.s.o.j.AbstractEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-03 12:39:24,152 INFO o.s.b.d.a.OptionalLiveReloadServer [task-2] LiveReload server is running on port 35729
+2020-07-03 12:39:24,489 WARN o.s.d.r.w.h.HalBrowser [restartedMain] ---
+2020-07-03 12:39:24,490 WARN o.s.d.r.w.h.HalBrowser [restartedMain] Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2020-07-03 12:39:24,490 WARN o.s.d.r.w.h.HalBrowser [restartedMain] ---
+2020-07-03 12:39:24,513 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-03 12:39:24,686 WARN o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-07-03 12:39:24,980 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-03 12:39:25,024 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2020-07-03 12:39:25,030 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-03 12:39:25,034 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Triggering deferred initialization of Spring Data repositories…
+2020-07-03 12:39:25,036 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Spring Data repositories initialized!
+2020-07-03 12:39:25,060 INFO o.s.b.StartupInfoLogger [restartedMain] Started AuApplication in 4.065 seconds (JVM running for 154.172)
+2020-07-03 12:39:25,069 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2020-07-03 12:39:30,184 INFO o.a.j.l.DirectJDKLog [RMI TCP Connection(2)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-03 12:39:30,185 INFO o.s.w.s.FrameworkServlet [RMI TCP Connection(2)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2020-07-03 12:39:30,192 INFO o.s.w.s.FrameworkServlet [RMI TCP Connection(2)-127.0.0.1] Completed initialization in 6 ms
+2020-07-03 12:39:44,145 INFO c.A.A.c.CourseController [http-nio-8080-exec-1] Get course Called
+2020-07-03 12:39:44,162 INFO c.A.A.c.TraineeController [http-nio-8080-exec-8] Get All Trainee Called
+2020-07-03 12:39:44,197 INFO c.A.A.c.AcademicController [http-nio-8080-exec-9] Get Assessment Called with id AU0120
+2020-07-03 12:39:44,219 INFO c.A.A.c.CourseController [http-nio-8080-exec-7] Get course Called
+2020-07-03 12:39:44,238 INFO c.A.A.c.TraineeController [http-nio-8080-exec-5] Get All Trainee Called
+2020-07-03 12:39:44,258 INFO c.A.A.c.AcademicController [http-nio-8080-exec-4] Get Assessment Called with id AU0120
+2020-07-03 12:40:15,851 INFO o.s.o.j.AbstractEntityManagerFactoryBean [Thread-349] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-03 12:40:15,853 INFO o.s.s.c.ExecutorConfigurationSupport [Thread-349] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-03 12:40:15,854 INFO c.z.h.HikariDataSource [Thread-349] HikariPool-2 - Shutdown initiated...
+2020-07-03 12:40:15,867 INFO c.z.h.HikariDataSource [Thread-349] HikariPool-2 - Shutdown completed.
+2020-07-03 12:40:16,518 INFO o.s.b.StartupInfoLogger [restartedMain] Starting AuApplication on DESKTOP-5DRKUTM with PID 4740 (C:\Users\Rohit\Documents\eclipse-work\AU\target\classes started by Rohit in C:\Users\Rohit\Documents\eclipse-work\AU)
+2020-07-03 12:40:16,519 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-07-03 12:40:17,661 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-03 12:40:17,678 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 16ms. Found 0 JPA repository interfaces.
+2020-07-03 12:40:17,996 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2020-07-03 12:40:17,997 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-03 12:40:17,998 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-07-03 12:40:17,999 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-03 12:40:18,101 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-07-03 12:40:18,102 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1575 ms
+2020-07-03 12:40:18,465 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-03 12:40:18,513 INFO o.h.j.i.u.LogHelper [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-03 12:40:18,526 INFO c.z.h.HikariDataSource [task-1] HikariPool-3 - Starting...
+2020-07-03 12:40:18,536 INFO c.z.h.HikariDataSource [task-1] HikariPool-3 - Start completed.
+2020-07-03 12:40:18,536 INFO o.h.d.Dialect [task-1] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-07-03 12:40:18,576 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-03 12:40:18,578 INFO o.s.o.j.AbstractEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-03 12:40:18,737 INFO o.s.b.d.a.OptionalLiveReloadServer [task-2] LiveReload server is running on port 35729
+2020-07-03 12:40:19,034 WARN o.s.d.r.w.h.HalBrowser [restartedMain] ---
+2020-07-03 12:40:19,034 WARN o.s.d.r.w.h.HalBrowser [restartedMain] Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2020-07-03 12:40:19,034 WARN o.s.d.r.w.h.HalBrowser [restartedMain] ---
+2020-07-03 12:40:19,052 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-03 12:40:19,220 WARN o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-07-03 12:40:19,445 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-03 12:40:19,482 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2020-07-03 12:40:19,489 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-03 12:40:19,490 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Triggering deferred initialization of Spring Data repositories…
+2020-07-03 12:40:19,491 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Spring Data repositories initialized!
+2020-07-03 12:40:19,507 INFO o.s.b.StartupInfoLogger [restartedMain] Started AuApplication in 3.097 seconds (JVM running for 208.619)
+2020-07-03 12:40:19,511 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2020-07-03 12:40:44,019 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-03 12:40:44,020 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-07-03 12:40:44,033 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 12 ms
+2020-07-03 12:40:44,046 INFO c.A.A.c.CourseController [http-nio-8080-exec-1] Get course Called
+2020-07-03 12:40:44,047 INFO c.A.A.c.TraineeController [http-nio-8080-exec-3] Get All Trainee Called
+2020-07-03 12:40:44,047 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-2] Get Assessment Called
+2020-07-03 12:40:44,050 INFO c.A.A.c.AcademicController [http-nio-8080-exec-5] Get Assessment Called with id AU0120
+2020-07-03 12:40:44,115 INFO c.A.A.c.AcademicController [http-nio-8080-exec-6] Get Assessment Called with id AU0120
+2020-07-03 12:40:44,116 INFO c.A.A.c.TraineeController [http-nio-8080-exec-7] Get All Trainee Called
+2020-07-03 12:40:44,116 INFO c.A.A.c.CourseController [http-nio-8080-exec-8] Get course Called
+2020-07-03 12:40:44,126 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-9] Get Assessment Called
+2020-07-03 12:42:40,205 INFO c.A.A.c.CourseController [http-nio-8080-exec-1] Get course Called
+2020-07-03 12:42:40,221 INFO c.A.A.c.CourseController [http-nio-8080-exec-2] Get course Called
+2020-07-03 12:42:40,233 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-6] Get Assessment Called
+2020-07-03 12:42:40,250 INFO c.A.A.c.AcademicController [http-nio-8080-exec-9] Get Assessment Called with id AU0120
+2020-07-03 12:42:40,250 INFO c.A.A.c.TraineeController [http-nio-8080-exec-8] Get All Trainee Called
+2020-07-03 12:42:40,277 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-7] Get Assessment Called
+2020-07-03 12:42:40,340 INFO c.A.A.c.TraineeController [http-nio-8080-exec-10] Get All Trainee Called
+2020-07-03 12:42:40,340 INFO c.A.A.c.AcademicController [http-nio-8080-exec-4] Get Assessment Called with id AU0120
+2020-07-03 12:44:15,130 INFO c.A.A.c.CourseController [http-nio-8080-exec-6] Get course Called
+2020-07-03 12:44:15,141 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-9] Get Assessment Called
+2020-07-03 12:44:15,161 INFO c.A.A.c.TraineeController [http-nio-8080-exec-8] Get All Trainee Called
+2020-07-03 12:44:15,171 INFO c.A.A.c.AcademicController [http-nio-8080-exec-7] Get Assessment Called with id AU0120
+2020-07-03 12:44:15,172 INFO c.A.A.c.CourseController [http-nio-8080-exec-4] Get course Called
+2020-07-03 12:44:15,219 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-10] Get Assessment Called
+2020-07-03 12:44:15,222 INFO c.A.A.c.TraineeController [http-nio-8080-exec-5] Get All Trainee Called
+2020-07-03 12:44:15,228 INFO c.A.A.c.AcademicController [http-nio-8080-exec-2] Get Assessment Called with id AU0120
+2020-07-03 12:44:36,461 INFO c.A.A.c.CourseController [http-nio-8080-exec-8] Get course Called
+2020-07-03 12:44:36,475 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-7] Get Assessment Called
+2020-07-03 12:44:36,490 INFO c.A.A.c.CourseController [http-nio-8080-exec-4] Get course Called
+2020-07-03 12:44:36,492 INFO c.A.A.c.TraineeController [http-nio-8080-exec-10] Get All Trainee Called
+2020-07-03 12:44:36,503 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-5] Get Assessment Called
+2020-07-03 12:44:36,513 INFO c.A.A.c.TraineeController [http-nio-8080-exec-2] Get All Trainee Called
+2020-07-03 12:44:36,529 INFO c.A.A.c.AcademicController [http-nio-8080-exec-6] Get Assessment Called with id AU0120
+2020-07-03 12:44:36,560 INFO c.A.A.c.AcademicController [http-nio-8080-exec-9] Get Assessment Called with id AU0120
+2020-07-03 12:44:41,321 INFO c.A.A.c.AcademicController [http-nio-8080-exec-7] Get Assessment Called with id AU0120
+2020-07-03 12:44:41,331 INFO c.A.A.c.AcademicController [http-nio-8080-exec-4] Get Assessment Called with id AU0120
+2020-07-03 12:45:07,644 INFO o.s.o.j.AbstractEntityManagerFactoryBean [Thread-695] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-03 12:45:07,646 INFO o.s.s.c.ExecutorConfigurationSupport [Thread-695] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-03 12:45:07,648 INFO c.z.h.HikariDataSource [Thread-695] HikariPool-3 - Shutdown initiated...
+2020-07-03 12:45:07,656 INFO c.z.h.HikariDataSource [Thread-695] HikariPool-3 - Shutdown completed.
+2020-07-03 12:45:08,293 INFO o.s.b.StartupInfoLogger [restartedMain] Starting AuApplication on DESKTOP-5DRKUTM with PID 4740 (C:\Users\Rohit\Documents\eclipse-work\AU\target\classes started by Rohit in C:\Users\Rohit\Documents\eclipse-work\AU)
+2020-07-03 12:45:08,294 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-07-03 12:45:09,410 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-03 12:45:09,429 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 18ms. Found 0 JPA repository interfaces.
+2020-07-03 12:45:09,759 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2020-07-03 12:45:09,760 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-03 12:45:09,761 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-07-03 12:45:09,762 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-03 12:45:09,805 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-07-03 12:45:09,805 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1504 ms
+2020-07-03 12:45:09,980 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-03 12:45:09,999 INFO o.h.j.i.u.LogHelper [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-03 12:45:10,009 INFO c.z.h.HikariDataSource [task-1] HikariPool-4 - Starting...
+2020-07-03 12:45:10,035 INFO c.z.h.HikariDataSource [task-1] HikariPool-4 - Start completed.
+2020-07-03 12:45:10,036 INFO o.h.d.Dialect [task-1] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-07-03 12:45:10,069 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-03 12:45:10,070 INFO o.s.o.j.AbstractEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-03 12:45:10,102 INFO o.s.b.d.a.OptionalLiveReloadServer [task-2] LiveReload server is running on port 35729
+2020-07-03 12:45:10,325 WARN o.s.d.r.w.h.HalBrowser [restartedMain] ---
+2020-07-03 12:45:10,325 WARN o.s.d.r.w.h.HalBrowser [restartedMain] Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2020-07-03 12:45:10,325 WARN o.s.d.r.w.h.HalBrowser [restartedMain] ---
+2020-07-03 12:45:10,343 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-03 12:45:10,522 WARN o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-07-03 12:45:10,812 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-03 12:45:10,851 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2020-07-03 12:45:10,857 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-03 12:45:10,858 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Triggering deferred initialization of Spring Data repositories…
+2020-07-03 12:45:10,860 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Spring Data repositories initialized!
+2020-07-03 12:45:10,877 INFO o.s.b.StartupInfoLogger [restartedMain] Started AuApplication in 2.768 seconds (JVM running for 499.989)
+2020-07-03 12:45:10,881 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2020-07-03 12:48:11,967 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-03 12:48:11,968 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-07-03 12:48:11,979 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 11 ms
+2020-07-03 12:48:11,998 INFO c.A.A.c.CourseController [http-nio-8080-exec-1] Get course Called
+2020-07-03 12:48:11,998 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-2] Get Assessment Called
+2020-07-03 12:48:12,041 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-3] Get Assessment Called
+2020-07-03 12:48:12,059 INFO c.A.A.c.CourseController [http-nio-8080-exec-4] Get course Called
+2020-07-03 12:48:12,076 INFO c.A.A.c.TraineeController [http-nio-8080-exec-5] Get All Trainee Called
+2020-07-03 12:48:12,107 INFO c.A.A.c.AcademicController [http-nio-8080-exec-6] Get Assessment Called with id AU0120
+2020-07-03 12:48:12,148 INFO c.A.A.c.TraineeController [http-nio-8080-exec-7] Get All Trainee Called
+2020-07-03 12:48:12,198 INFO c.A.A.c.AcademicController [http-nio-8080-exec-8] Get Assessment Called with id AU0120
+2020-07-03 12:49:26,312 INFO c.A.A.c.CourseController [http-nio-8080-exec-2] Get course Called
+2020-07-03 12:49:26,325 INFO c.A.A.c.CourseController [http-nio-8080-exec-3] Get course Called
+2020-07-03 12:49:26,335 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-1] Get Assessment Called
+2020-07-03 12:49:26,352 INFO c.A.A.c.TraineeController [http-nio-8080-exec-4] Get All Trainee Called
+2020-07-03 12:49:26,361 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-5] Get Assessment Called
+2020-07-03 12:49:26,375 INFO c.A.A.c.AcademicController [http-nio-8080-exec-6] Get Assessment Called with id AU0120
+2020-07-03 12:49:26,390 INFO c.A.A.c.TraineeController [http-nio-8080-exec-7] Get All Trainee Called
+2020-07-03 12:49:26,404 INFO c.A.A.c.AcademicController [http-nio-8080-exec-8] Get Assessment Called with id AU0120
+2020-07-03 12:49:32,371 INFO c.A.A.c.AcademicController [http-nio-8080-exec-2] Get Assessment Called with id AU0130
+2020-07-03 12:49:32,380 INFO c.A.A.c.AcademicController [http-nio-8080-exec-3] Get Assessment Called with id AU0130
+2020-07-03 12:49:53,119 INFO c.A.A.c.CourseController [http-nio-8080-exec-5] Get course Called
+2020-07-03 12:49:53,137 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-4] Get Assessment Called
+2020-07-03 12:49:53,148 INFO c.A.A.c.CourseController [http-nio-8080-exec-6] Get course Called
+2020-07-03 12:49:53,159 INFO c.A.A.c.TraineeController [http-nio-8080-exec-7] Get All Trainee Called
+2020-07-03 12:49:53,162 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-8] Get Assessment Called
+2020-07-03 12:49:53,172 INFO c.A.A.c.AcademicController [http-nio-8080-exec-9] Get Assessment Called with id AU0120
+2020-07-03 12:49:53,183 INFO c.A.A.c.TraineeController [http-nio-8080-exec-10] Get All Trainee Called
+2020-07-03 12:49:53,201 INFO c.A.A.c.AcademicController [http-nio-8080-exec-2] Get Assessment Called with id AU0120
+2020-07-03 12:49:57,814 INFO c.A.A.c.AcademicController [http-nio-8080-exec-3] Get Assessment Called with id AU0120
+2020-07-03 12:49:57,825 INFO c.A.A.c.AcademicController [http-nio-8080-exec-1] Get Assessment Called with id AU0120
+2020-07-03 12:50:42,736 INFO c.A.A.c.CourseController [http-nio-8080-exec-7] Get course Called
+2020-07-03 12:50:42,738 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-8] Get Assessment Called
+2020-07-03 12:50:42,746 INFO c.A.A.c.CourseController [http-nio-8080-exec-8] Get course Called
+2020-07-03 12:50:42,769 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-10] Get Assessment Called
+2020-07-03 12:50:42,769 INFO c.A.A.c.TraineeController [http-nio-8080-exec-2] Get All Trainee Called
+2020-07-03 12:50:42,774 INFO c.A.A.c.AcademicController [http-nio-8080-exec-3] Get Assessment Called with id AU0120
+2020-07-03 12:50:42,784 INFO c.A.A.c.TraineeController [http-nio-8080-exec-3] Get All Trainee Called
+2020-07-03 12:50:42,793 INFO c.A.A.c.AcademicController [http-nio-8080-exec-4] Get Assessment Called with id AU0120
+2020-07-03 12:50:46,389 INFO c.A.A.c.AcademicController [http-nio-8080-exec-6] Get Assessment Called with id AU0120
+2020-07-03 12:50:46,405 INFO c.A.A.c.AcademicController [http-nio-8080-exec-5] Get Assessment Called with id AU0120
+2020-07-03 12:51:08,835 INFO c.A.A.c.CourseController [http-nio-8080-exec-2] Get course Called
+2020-07-03 12:51:08,873 INFO c.A.A.c.TraineeController [http-nio-8080-exec-1] Get All Trainee Called
+2020-07-03 12:51:08,876 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-10] Get Assessment Called
+2020-07-03 12:51:08,903 INFO c.A.A.c.CourseController [http-nio-8080-exec-3] Get course Called
+2020-07-03 12:51:08,904 INFO c.A.A.c.AcademicController [http-nio-8080-exec-4] Get Assessment Called with id AU0120
+2020-07-03 12:51:08,914 INFO c.A.A.c.TraineeController [http-nio-8080-exec-6] Get All Trainee Called
+2020-07-03 12:51:08,914 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-5] Get Assessment Called
+2020-07-03 12:51:08,979 INFO c.A.A.c.AcademicController [http-nio-8080-exec-7] Get Assessment Called with id AU0120
+2020-07-03 12:52:06,675 INFO c.A.A.c.CourseController [http-nio-8080-exec-10] Get course Called
+2020-07-03 12:52:06,691 INFO c.A.A.c.CourseController [http-nio-8080-exec-3] Get course Called
+2020-07-03 12:52:06,704 INFO c.A.A.c.TraineeController [http-nio-8080-exec-6] Get All Trainee Called
+2020-07-03 12:52:06,704 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-4] Get Assessment Called
+2020-07-03 12:52:06,733 INFO c.A.A.c.AcademicController [http-nio-8080-exec-5] Get Assessment Called with id AU0120
+2020-07-03 12:52:06,747 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-7] Get Assessment Called
+2020-07-03 12:52:06,756 INFO c.A.A.c.TraineeController [http-nio-8080-exec-2] Get All Trainee Called
+2020-07-03 12:52:06,768 INFO c.A.A.c.AcademicController [http-nio-8080-exec-8] Get Assessment Called with id AU0120
+2020-07-03 12:52:18,881 INFO c.A.A.c.AcademicController [http-nio-8080-exec-1] Get Assessment Called with id AU0120
+2020-07-03 12:52:18,894 INFO c.A.A.c.AcademicController [http-nio-8080-exec-9] Get Assessment Called with id AU0120
+2020-07-03 12:54:25,676 INFO c.A.A.c.CourseController [http-nio-8080-exec-4] Get course Called
+2020-07-03 12:54:25,676 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-5] Get Assessment Called
+2020-07-03 12:54:25,688 INFO c.A.A.c.TraineeController [http-nio-8080-exec-7] Get All Trainee Called
+2020-07-03 12:54:25,704 INFO c.A.A.c.CourseController [http-nio-8080-exec-8] Get course Called
+2020-07-03 12:54:25,704 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-2] Get Assessment Called
+2020-07-03 12:54:25,743 INFO c.A.A.c.AcademicController [http-nio-8080-exec-1] Get Assessment Called with id AU0120
+2020-07-03 12:54:25,743 INFO c.A.A.c.TraineeController [http-nio-8080-exec-9] Get All Trainee Called
+2020-07-03 12:54:25,779 INFO c.A.A.c.AcademicController [http-nio-8080-exec-3] Get Assessment Called with id AU0120
+2020-07-03 12:54:29,837 INFO c.A.A.c.AcademicController [http-nio-8080-exec-10] Get Assessment Called with id AU0130
+2020-07-03 12:54:29,849 INFO c.A.A.c.AcademicController [http-nio-8080-exec-6] Get Assessment Called with id AU0130
+2020-07-03 12:55:16,092 INFO c.A.A.c.CourseController [http-nio-8080-exec-4] Get course Called
+2020-07-03 12:55:16,103 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-7] Get Assessment Called
+2020-07-03 12:55:16,118 INFO c.A.A.c.TraineeController [http-nio-8080-exec-8] Get All Trainee Called
+2020-07-03 12:55:16,120 INFO c.A.A.c.CourseController [http-nio-8080-exec-2] Get course Called
+2020-07-03 12:55:16,140 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-9] Get Assessment Called
+2020-07-03 12:55:16,164 INFO c.A.A.c.AcademicController [http-nio-8080-exec-1] Get Assessment Called with id AU0120
+2020-07-03 12:55:16,173 INFO c.A.A.c.TraineeController [http-nio-8080-exec-3] Get All Trainee Called
+2020-07-03 12:55:16,194 INFO c.A.A.c.AcademicController [http-nio-8080-exec-10] Get Assessment Called with id AU0120
+2020-07-03 12:55:21,396 INFO c.A.A.c.AcademicController [http-nio-8080-exec-6] Get Assessment Called with id AU0120
+2020-07-03 12:55:21,406 INFO c.A.A.c.AcademicController [http-nio-8080-exec-5] Get Assessment Called with id AU0120
+2020-07-03 13:02:46,278 INFO c.A.A.c.CourseController [http-nio-8080-exec-9] Get course Called
+2020-07-03 13:02:46,287 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-1] Get Assessment Called
+2020-07-03 13:02:46,289 INFO c.A.A.c.CourseController [http-nio-8080-exec-3] Get course Called
+2020-07-03 13:02:46,314 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-10] Get Assessment Called
+2020-07-03 13:02:46,315 INFO c.A.A.c.TraineeController [http-nio-8080-exec-6] Get All Trainee Called
+2020-07-03 13:02:46,315 INFO c.A.A.c.AcademicController [http-nio-8080-exec-5] Get Assessment Called with id AU0120
+2020-07-03 13:02:46,325 INFO c.A.A.c.TraineeController [http-nio-8080-exec-4] Get All Trainee Called
+2020-07-03 13:02:46,455 INFO c.A.A.c.AcademicController [http-nio-8080-exec-7] Get Assessment Called with id AU0120
+2020-07-03 13:36:46,047 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-3] Get Assessment Called
+2020-07-03 13:36:46,135 INFO c.A.A.c.CourseController [http-nio-8080-exec-1] Get course Called
+2020-07-03 13:36:46,137 INFO c.A.A.c.TraineeController [http-nio-8080-exec-6] Get All Trainee Called
+2020-07-03 13:36:46,140 INFO c.A.A.c.AcademicController [http-nio-8080-exec-10] Get Assessment Called with id AU0120
+2020-07-03 13:36:46,190 INFO c.A.A.c.TraineeController [http-nio-8080-exec-4] Get All Trainee Called
+2020-07-03 13:36:46,241 INFO c.A.A.c.CourseController [http-nio-8080-exec-5] Get course Called
+2020-07-03 13:36:46,264 INFO c.A.A.c.AcademicController [http-nio-8080-exec-7] Get Assessment Called with id AU0120
+2020-07-03 13:36:46,319 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-8] Get Assessment Called
+2020-07-03 13:37:42,128 INFO c.A.A.c.AcademicController [http-nio-8080-exec-2] Get Assessment Called with id AU0120
+2020-07-03 13:37:42,192 INFO c.A.A.c.AcademicController [http-nio-8080-exec-9] Get Assessment Called with id AU0120
+2020-07-03 13:40:08,539 INFO c.A.A.c.CourseController [http-nio-8080-exec-10] Get course Called
+2020-07-03 13:40:08,549 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-7] Get Assessment Called
+2020-07-03 13:40:08,561 INFO c.A.A.c.TraineeController [http-nio-8080-exec-3] Get All Trainee Called
+2020-07-03 13:40:08,573 INFO c.A.A.c.AcademicController [http-nio-8080-exec-8] Get Assessment Called with id AU0120
+2020-07-03 13:40:08,607 INFO c.A.A.c.AcademicController [http-nio-8080-exec-9] Get Assessment Called with id AU0120
+2020-07-03 13:40:08,607 INFO c.A.A.c.CourseController [http-nio-8080-exec-2] Get course Called
+2020-07-03 13:40:08,700 INFO c.A.A.c.TraineeController [http-nio-8080-exec-4] Get All Trainee Called
+2020-07-03 13:40:08,748 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-1] Get Assessment Called
+2020-07-03 13:41:02,584 INFO c.A.A.c.CourseController [http-nio-8080-exec-6] Get course Called
+2020-07-03 13:41:02,584 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-5] Get Assessment Called
+2020-07-03 13:41:02,605 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-8] Get Assessment Called
+2020-07-03 13:41:02,616 INFO c.A.A.c.TraineeController [http-nio-8080-exec-2] Get All Trainee Called
+2020-07-03 13:41:02,616 INFO c.A.A.c.CourseController [http-nio-8080-exec-10] Get course Called
+2020-07-03 13:41:02,631 INFO c.A.A.c.AcademicController [http-nio-8080-exec-9] Get Assessment Called with id AU0120
+2020-07-03 13:41:02,651 INFO c.A.A.c.AcademicController [http-nio-8080-exec-3] Get Assessment Called with id AU0120
+2020-07-03 13:41:02,850 INFO c.A.A.c.TraineeController [http-nio-8080-exec-7] Get All Trainee Called
+2020-07-03 13:41:14,602 INFO c.A.A.c.AcademicController [http-nio-8080-exec-4] Get Assessment Called with id AU0120
+2020-07-03 13:41:14,662 INFO c.A.A.c.AcademicController [http-nio-8080-exec-1] Get Assessment Called with id AU0120
+2020-07-03 13:42:11,761 INFO c.A.A.c.CourseController [http-nio-8080-exec-10] Get course Called
+2020-07-03 13:42:11,769 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-8] Get Assessment Called
+2020-07-03 13:42:11,777 INFO c.A.A.c.TraineeController [http-nio-8080-exec-3] Get All Trainee Called
+2020-07-03 13:42:11,790 INFO c.A.A.c.CourseController [http-nio-8080-exec-2] Get course Called
+2020-07-03 13:42:11,803 INFO c.A.A.c.AcademicController [http-nio-8080-exec-4] Get Assessment Called with id AU0120
+2020-07-03 13:42:11,803 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-7] Get Assessment Called
+2020-07-03 13:42:11,845 INFO c.A.A.c.TraineeController [http-nio-8080-exec-1] Get All Trainee Called
+2020-07-03 13:42:11,888 INFO c.A.A.c.AcademicController [http-nio-8080-exec-6] Get Assessment Called with id AU0120
+2020-07-03 13:43:35,279 INFO c.A.A.c.CourseController [http-nio-8080-exec-3] Get course Called
+2020-07-03 13:43:35,307 INFO c.A.A.c.CourseController [http-nio-8080-exec-2] Get course Called
+2020-07-03 13:43:35,331 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-4] Get Assessment Called
+2020-07-03 13:43:35,340 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-7] Get Assessment Called
+2020-07-03 13:43:35,367 INFO c.A.A.c.TraineeController [http-nio-8080-exec-1] Get All Trainee Called
+2020-07-03 13:43:35,487 INFO c.A.A.c.TraineeController [http-nio-8080-exec-6] Get All Trainee Called
+2020-07-03 13:43:35,499 INFO c.A.A.c.AcademicController [http-nio-8080-exec-9] Get Assessment Called with id AU0120
+2020-07-03 13:43:35,512 INFO c.A.A.c.AcademicController [http-nio-8080-exec-10] Get Assessment Called with id AU0120
+2020-07-03 13:43:45,848 INFO c.A.A.c.CourseController [http-nio-8080-exec-8] Get course Called
+2020-07-03 13:43:45,859 INFO c.A.A.c.CourseController [http-nio-8080-exec-5] Get course Called
+2020-07-03 13:43:45,868 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-3] Get Assessment Called
+2020-07-03 13:43:45,877 INFO c.A.A.c.TraineeController [http-nio-8080-exec-2] Get All Trainee Called
+2020-07-03 13:43:45,886 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-4] Get Assessment Called
+2020-07-03 13:43:45,903 INFO c.A.A.c.AcademicController [http-nio-8080-exec-7] Get Assessment Called with id AU0120
+2020-07-03 13:43:45,907 INFO c.A.A.c.TraineeController [http-nio-8080-exec-1] Get All Trainee Called
+2020-07-03 13:43:45,948 INFO c.A.A.c.AcademicController [http-nio-8080-exec-6] Get Assessment Called with id AU0120
+2020-07-03 13:45:07,939 INFO c.A.A.c.CourseController [http-nio-8080-exec-5] Get course Called
+2020-07-03 13:45:07,939 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-3] Get Assessment Called
+2020-07-03 13:45:07,960 INFO c.A.A.c.TraineeController [http-nio-8080-exec-2] Get All Trainee Called
+2020-07-03 13:45:07,970 INFO c.A.A.c.AcademicController [http-nio-8080-exec-4] Get Assessment Called with id AU0120
+2020-07-03 13:45:08,011 INFO c.A.A.c.TraineeController [http-nio-8080-exec-7] Get All Trainee Called
+2020-07-03 13:45:08,059 INFO c.A.A.c.AcademicController [http-nio-8080-exec-1] Get Assessment Called with id AU0120
+2020-07-03 13:45:08,078 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-6] Get Assessment Called
+2020-07-03 13:45:08,083 INFO c.A.A.c.CourseController [http-nio-8080-exec-10] Get course Called
+2020-07-03 13:45:15,714 INFO c.A.A.c.AcademicController [http-nio-8080-exec-8] Get Assessment Called with id AU0120
+2020-07-03 13:45:15,727 INFO c.A.A.c.AcademicController [http-nio-8080-exec-9] Get Assessment Called with id AU0120
+2020-07-03 13:50:00,486 INFO c.A.A.c.CourseController [http-nio-8080-exec-5] Get course Called
+2020-07-03 13:50:00,486 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-1] Get Assessment Called
+2020-07-03 13:50:00,512 INFO c.A.A.c.CourseController [http-nio-8080-exec-10] Get course Called
+2020-07-03 13:50:00,521 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-6] Get Assessment Called
+2020-07-03 13:50:00,523 INFO c.A.A.c.TraineeController [http-nio-8080-exec-8] Get All Trainee Called
+2020-07-03 13:50:00,525 INFO c.A.A.c.AcademicController [http-nio-8080-exec-9] Get Assessment Called with id AU0120
+2020-07-03 13:50:00,562 INFO c.A.A.c.AcademicController [http-nio-8080-exec-7] Get Assessment Called with id AU0120
+2020-07-03 13:50:00,562 INFO c.A.A.c.TraineeController [http-nio-8080-exec-2] Get All Trainee Called
+2020-07-03 13:50:12,371 INFO c.A.A.c.AcademicController [http-nio-8080-exec-4] Get Assessment Called with id AU0120
+2020-07-03 13:50:12,381 INFO c.A.A.c.AcademicController [http-nio-8080-exec-3] Get Assessment Called with id AU0120
+2020-07-03 13:50:42,679 INFO c.A.A.c.CourseController [http-nio-8080-exec-1] Get course Called
+2020-07-03 13:50:42,697 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-5] Get Assessment Called
+2020-07-03 13:50:42,704 INFO c.A.A.c.CourseController [http-nio-8080-exec-10] Get course Called
+2020-07-03 13:50:42,720 INFO c.A.A.c.TraineeController [http-nio-8080-exec-6] Get All Trainee Called
+2020-07-03 13:50:42,734 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-9] Get Assessment Called
+2020-07-03 13:50:42,755 INFO c.A.A.c.AcademicController [http-nio-8080-exec-8] Get Assessment Called with id AU0120
+2020-07-03 13:50:42,775 INFO c.A.A.c.TraineeController [http-nio-8080-exec-7] Get All Trainee Called
+2020-07-03 13:50:42,807 INFO c.A.A.c.AcademicController [http-nio-8080-exec-2] Get Assessment Called with id AU0120
+2020-07-03 13:50:49,053 INFO c.A.A.c.AcademicController [http-nio-8080-exec-4] Get Assessment Called with id AU0120
+2020-07-03 13:50:49,067 INFO c.A.A.c.AcademicController [http-nio-8080-exec-3] Get Assessment Called with id AU0120
+2020-07-03 13:51:39,279 INFO c.A.A.c.CourseController [http-nio-8080-exec-5] Get course Called
+2020-07-03 13:51:39,297 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-10] Get Assessment Called
+2020-07-03 13:51:39,306 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-9] Get Assessment Called
+2020-07-03 13:51:39,297 INFO c.A.A.c.CourseController [http-nio-8080-exec-6] Get course Called
+2020-07-03 13:51:39,317 INFO c.A.A.c.TraineeController [http-nio-8080-exec-8] Get All Trainee Called
+2020-07-03 13:51:39,324 INFO c.A.A.c.TraineeController [http-nio-8080-exec-7] Get All Trainee Called
+2020-07-03 13:51:39,332 INFO c.A.A.c.AcademicController [http-nio-8080-exec-2] Get Assessment Called with id AU0120
+2020-07-03 13:51:39,341 INFO c.A.A.c.AcademicController [http-nio-8080-exec-4] Get Assessment Called with id AU0120
+2020-07-03 13:52:24,554 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-5] Get Assessment Called
+2020-07-03 13:52:24,554 INFO c.A.A.c.CourseController [http-nio-8080-exec-1] Get course Called
+2020-07-03 13:52:24,568 INFO c.A.A.c.TraineeController [http-nio-8080-exec-10] Get All Trainee Called
+2020-07-03 13:52:24,577 INFO c.A.A.c.CourseController [http-nio-8080-exec-9] Get course Called
+2020-07-03 13:52:24,577 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-6] Get Assessment Called
+2020-07-03 13:52:24,598 INFO c.A.A.c.AcademicController [http-nio-8080-exec-8] Get Assessment Called with id AU0120
+2020-07-03 13:52:24,620 INFO c.A.A.c.TraineeController [http-nio-8080-exec-7] Get All Trainee Called
+2020-07-03 13:52:24,706 INFO c.A.A.c.AcademicController [http-nio-8080-exec-2] Get Assessment Called with id AU0120
+2020-07-03 13:52:39,429 INFO c.A.A.c.AcademicController [http-nio-8080-exec-4] Get Assessment Called with id AU0120
+2020-07-03 13:52:39,441 INFO c.A.A.c.AcademicController [http-nio-8080-exec-3] Get Assessment Called with id AU0120
+2020-07-03 13:54:03,962 INFO c.A.A.c.CourseController [http-nio-8080-exec-9] Get course Called
+2020-07-03 13:54:03,973 INFO c.A.A.c.TraineeController [http-nio-8080-exec-7] Get All Trainee Called
+2020-07-03 13:54:03,974 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-8] Get Assessment Called
+2020-07-03 13:54:03,984 INFO c.A.A.c.AcademicController [http-nio-8080-exec-2] Get Assessment Called with id AU0120
+2020-07-03 13:54:03,999 INFO c.A.A.c.CourseController [http-nio-8080-exec-4] Get course Called
+2020-07-03 13:54:04,015 INFO c.A.A.c.TraineeController [http-nio-8080-exec-3] Get All Trainee Called
+2020-07-03 13:54:04,015 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-1] Get Assessment Called
+2020-07-03 13:54:04,023 INFO c.A.A.c.AcademicController [http-nio-8080-exec-10] Get Assessment Called with id AU0120
+2020-07-03 13:55:48,236 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-2] Get Assessment Called
+2020-07-03 13:55:48,236 INFO c.A.A.c.CourseController [http-nio-8080-exec-8] Get course Called
+2020-07-03 13:55:48,288 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-4] Get Assessment Called
+2020-07-03 13:55:48,289 INFO c.A.A.c.CourseController [http-nio-8080-exec-3] Get course Called
+2020-07-03 13:55:48,290 INFO c.A.A.c.TraineeController [http-nio-8080-exec-1] Get All Trainee Called
+2020-07-03 13:55:48,300 INFO c.A.A.c.AcademicController [http-nio-8080-exec-10] Get Assessment Called with id AU0120
+2020-07-03 13:55:48,317 INFO c.A.A.c.TraineeController [http-nio-8080-exec-7] Get All Trainee Called
+2020-07-03 13:55:48,343 INFO c.A.A.c.AcademicController [http-nio-8080-exec-5] Get Assessment Called with id AU0120
+2020-07-03 13:56:18,793 INFO c.A.A.c.CourseController [http-nio-8080-exec-6] Get course Called
+2020-07-03 13:56:18,807 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-9] Get Assessment Called
+2020-07-03 13:56:18,813 INFO c.A.A.c.TraineeController [http-nio-8080-exec-2] Get All Trainee Called
+2020-07-03 13:56:18,821 INFO c.A.A.c.CourseController [http-nio-8080-exec-8] Get course Called
+2020-07-03 13:56:18,825 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-3] Get Assessment Called
+2020-07-03 13:56:18,841 INFO c.A.A.c.TraineeController [http-nio-8080-exec-4] Get All Trainee Called
+2020-07-03 13:56:18,843 INFO c.A.A.c.AcademicController [http-nio-8080-exec-1] Get Assessment Called with id AU0120
+2020-07-03 13:56:18,864 INFO c.A.A.c.AcademicController [http-nio-8080-exec-10] Get Assessment Called with id AU0120
+2020-07-03 13:57:07,776 INFO c.A.A.c.CourseController [http-nio-8080-exec-7] Get course Called
+2020-07-03 13:57:07,790 INFO c.A.A.c.CourseController [http-nio-8080-exec-5] Get course Called
+2020-07-03 13:57:07,804 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-6] Get Assessment Called
+2020-07-03 13:57:07,842 INFO c.A.A.c.TraineeController [http-nio-8080-exec-9] Get All Trainee Called
+2020-07-03 13:57:07,858 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-2] Get Assessment Called
+2020-07-03 13:57:07,893 INFO c.A.A.c.AcademicController [http-nio-8080-exec-8] Get Assessment Called with id AU0120
+2020-07-03 13:57:07,894 INFO c.A.A.c.TraineeController [http-nio-8080-exec-3] Get All Trainee Called
+2020-07-03 13:57:07,915 INFO c.A.A.c.AcademicController [http-nio-8080-exec-4] Get Assessment Called with id AU0120
+2020-07-03 13:57:19,792 INFO c.A.A.c.CourseController [http-nio-8080-exec-10] Get course Called
+2020-07-03 13:57:19,808 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-7] Get Assessment Called
+2020-07-03 13:57:19,814 INFO c.A.A.c.CourseController [http-nio-8080-exec-5] Get course Called
+2020-07-03 13:57:19,822 INFO c.A.A.c.TraineeController [http-nio-8080-exec-6] Get All Trainee Called
+2020-07-03 13:57:19,829 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-9] Get Assessment Called
+2020-07-03 13:57:19,839 INFO c.A.A.c.AcademicController [http-nio-8080-exec-2] Get Assessment Called with id AU0120
+2020-07-03 13:57:19,839 INFO c.A.A.c.TraineeController [http-nio-8080-exec-8] Get All Trainee Called
+2020-07-03 13:57:19,869 INFO c.A.A.c.AcademicController [http-nio-8080-exec-3] Get Assessment Called with id AU0120
+2020-07-03 15:27:21,330 INFO c.A.A.c.AcademicController [http-nio-8080-exec-7] Get Assessment Called with id AU0130
+2020-07-03 15:27:21,415 INFO c.A.A.c.AcademicController [http-nio-8080-exec-5] Get Assessment Called with id AU0130
+2020-07-03 15:28:19,696 INFO c.A.A.c.CourseController [http-nio-8080-exec-6] Get course Called
+2020-07-03 15:28:19,703 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-9] Get Assessment Called
+2020-07-03 15:28:19,710 INFO c.A.A.c.CourseController [http-nio-8080-exec-8] Get course Called
+2020-07-03 15:28:19,717 INFO c.A.A.c.TraineeController [http-nio-8080-exec-2] Get All Trainee Called
+2020-07-03 15:28:19,725 INFO c.A.A.c.AcademicController [http-nio-8080-exec-3] Get Assessment Called with id AU0120
+2020-07-03 15:28:19,740 INFO c.A.A.c.TraineeController [http-nio-8080-exec-4] Get All Trainee Called
+2020-07-03 15:28:19,760 INFO c.A.A.c.AcademicController [http-nio-8080-exec-1] Get Assessment Called with id AU0120
+2020-07-03 15:28:19,779 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-10] Get Assessment Called
+2020-07-03 15:29:24,187 INFO c.A.A.c.CourseController [http-nio-8080-exec-8] Get course Called
+2020-07-03 15:29:24,189 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-3] Get Assessment Called
+2020-07-03 15:29:24,201 INFO c.A.A.c.TraineeController [http-nio-8080-exec-4] Get All Trainee Called
+2020-07-03 15:29:24,214 INFO c.A.A.c.CourseController [http-nio-8080-exec-9] Get course Called
+2020-07-03 15:29:24,214 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-1] Get Assessment Called
+2020-07-03 15:29:24,232 INFO c.A.A.c.AcademicController [http-nio-8080-exec-10] Get Assessment Called with id AU0120
+2020-07-03 15:29:24,232 INFO c.A.A.c.TraineeController [http-nio-8080-exec-7] Get All Trainee Called
+2020-07-03 15:29:24,257 INFO c.A.A.c.AcademicController [http-nio-8080-exec-5] Get Assessment Called with id AU0120
+2020-07-03 15:29:38,522 INFO c.A.A.c.CourseController [http-nio-8080-exec-2] Get course Called
+2020-07-03 15:29:38,545 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-8] Get Assessment Called
+2020-07-03 15:29:38,551 INFO c.A.A.c.CourseController [http-nio-8080-exec-3] Get course Called
+2020-07-03 15:29:38,563 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-4] Get Assessment Called
+2020-07-03 15:29:38,563 INFO c.A.A.c.TraineeController [http-nio-8080-exec-9] Get All Trainee Called
+2020-07-03 15:29:38,578 INFO c.A.A.c.AcademicController [http-nio-8080-exec-10] Get Assessment Called with id AU0120
+2020-07-03 15:29:38,586 INFO c.A.A.c.TraineeController [http-nio-8080-exec-7] Get All Trainee Called
+2020-07-03 15:29:38,625 INFO c.A.A.c.AcademicController [http-nio-8080-exec-5] Get Assessment Called with id AU0120
+2020-07-03 15:34:40,543 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-9] Get Assessment Called
+2020-07-03 15:34:40,543 INFO c.A.A.c.CourseController [http-nio-8080-exec-3] Get course Called
+2020-07-03 15:34:40,605 INFO c.A.A.c.AcademicController [http-nio-8080-exec-10] Get Assessment Called with id AU0120
+2020-07-03 15:34:40,605 INFO c.A.A.c.TraineeController [http-nio-8080-exec-4] Get All Trainee Called
+2020-07-03 15:34:40,705 INFO c.A.A.c.CourseController [http-nio-8080-exec-7] Get course Called
+2020-07-03 15:34:40,705 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-5] Get Assessment Called
+2020-07-03 15:34:40,766 INFO c.A.A.c.TraineeController [http-nio-8080-exec-1] Get All Trainee Called
+2020-07-03 15:34:40,790 INFO c.A.A.c.AcademicController [http-nio-8080-exec-2] Get Assessment Called with id AU0120
+2020-07-03 15:34:47,318 INFO c.A.A.c.CourseController [http-nio-8080-exec-8] Get course Called
+2020-07-03 15:34:47,319 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-6] Get Assessment Called
+2020-07-03 15:34:47,343 INFO c.A.A.c.TraineeController [http-nio-8080-exec-3] Get All Trainee Called
+2020-07-03 15:34:47,357 INFO c.A.A.c.CourseController [http-nio-8080-exec-9] Get course Called
+2020-07-03 15:34:47,357 INFO c.A.A.c.AcademicController [http-nio-8080-exec-10] Get Assessment Called with id AU0120
+2020-07-03 15:34:47,358 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-4] Get Assessment Called
+2020-07-03 15:34:47,390 INFO c.A.A.c.TraineeController [http-nio-8080-exec-7] Get All Trainee Called
+2020-07-03 15:34:47,423 INFO c.A.A.c.AcademicController [http-nio-8080-exec-5] Get Assessment Called with id AU0120
+2020-07-03 15:35:33,094 INFO c.A.A.c.CourseController [http-nio-8080-exec-1] Get course Called
+2020-07-03 15:35:33,183 INFO c.A.A.c.CourseController [http-nio-8080-exec-2] Get course Called
+2020-07-03 15:35:33,348 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-8] Get Assessment Called
+2020-07-03 15:35:33,348 INFO c.A.A.c.TraineeController [http-nio-8080-exec-6] Get All Trainee Called
+2020-07-03 15:35:33,351 INFO c.A.A.c.AcademicController [http-nio-8080-exec-3] Get Assessment Called with id AU0120
+2020-07-03 15:35:33,552 INFO c.A.A.c.TraineeController [http-nio-8080-exec-10] Get All Trainee Called
+2020-07-03 15:35:33,552 INFO c.A.A.c.AcademicController [http-nio-8080-exec-4] Get Assessment Called with id AU0120
+2020-07-03 15:35:33,552 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-9] Get Assessment Called
+2020-07-03 17:18:00,087 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-8] Get Assessment Called
+2020-07-03 17:18:00,087 INFO c.A.A.c.CourseController [http-nio-8080-exec-6] Get course Called
+2020-07-03 17:18:00,093 INFO c.A.A.c.TraineeController [http-nio-8080-exec-3] Get All Trainee Called
+2020-07-03 17:18:00,095 INFO c.A.A.c.AcademicController [http-nio-8080-exec-4] Get Assessment Called with id AU0120
+2020-07-03 17:18:00,292 INFO c.A.A.c.CourseController [http-nio-8080-exec-10] Get course Called
+2020-07-03 17:18:00,335 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-9] Get Assessment Called
+2020-07-03 17:18:00,335 INFO c.A.A.c.TraineeController [http-nio-8080-exec-5] Get All Trainee Called
+2020-07-03 17:18:00,336 INFO c.A.A.c.AcademicController [http-nio-8080-exec-7] Get Assessment Called with id AU0120
+2020-07-03 17:18:30,523 INFO c.A.A.c.CourseController [http-nio-8080-exec-1] Get course Called
+2020-07-03 17:18:30,533 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-2] Get Assessment Called
+2020-07-03 17:18:30,580 INFO c.A.A.c.CourseController [http-nio-8080-exec-6] Get course Called
+2020-07-03 17:18:30,600 INFO c.A.A.c.TraineeController [http-nio-8080-exec-8] Get All Trainee Called
+2020-07-03 17:18:30,613 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-3] Get Assessment Called
+2020-07-03 17:18:30,613 INFO c.A.A.c.AcademicController [http-nio-8080-exec-4] Get Assessment Called with id AU0120
+2020-07-03 17:18:30,627 INFO c.A.A.c.TraineeController [http-nio-8080-exec-10] Get All Trainee Called
+2020-07-03 17:18:30,628 INFO c.A.A.c.AcademicController [http-nio-8080-exec-9] Get Assessment Called with id AU0120
+2020-07-03 17:18:50,840 INFO c.A.A.c.CourseController [http-nio-8080-exec-5] Get course Called
+2020-07-03 17:18:50,856 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-7] Get Assessment Called
+2020-07-03 17:18:50,861 INFO c.A.A.c.TraineeController [http-nio-8080-exec-1] Get All Trainee Called
+2020-07-03 17:18:50,870 INFO c.A.A.c.CourseController [http-nio-8080-exec-2] Get course Called
+2020-07-03 17:18:50,887 INFO c.A.A.c.AcademicController [http-nio-8080-exec-6] Get Assessment Called with id AU0120
+2020-07-03 17:18:50,891 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-8] Get Assessment Called
+2020-07-03 17:18:50,892 INFO c.A.A.c.TraineeController [http-nio-8080-exec-3] Get All Trainee Called
+2020-07-03 17:18:50,949 INFO c.A.A.c.AcademicController [http-nio-8080-exec-4] Get Assessment Called with id AU0120
+2020-07-03 17:19:04,442 INFO c.A.A.c.CourseController [http-nio-8080-exec-9] Get course Called
+2020-07-03 17:19:04,442 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-10] Get Assessment Called
+2020-07-03 17:19:04,443 INFO c.A.A.c.TraineeController [http-nio-8080-exec-5] Get All Trainee Called
+2020-07-03 17:19:04,444 INFO c.A.A.c.AcademicController [http-nio-8080-exec-7] Get Assessment Called with id AU0120
+2020-07-03 17:19:04,496 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-1] Get Assessment Called
+2020-07-03 17:19:04,496 INFO c.A.A.c.CourseController [http-nio-8080-exec-2] Get course Called
+2020-07-03 17:19:04,498 INFO c.A.A.c.TraineeController [http-nio-8080-exec-6] Get All Trainee Called
+2020-07-03 17:19:04,500 INFO c.A.A.c.AcademicController [http-nio-8080-exec-1] Get Assessment Called with id AU0120
+2020-07-03 17:19:24,394 INFO c.A.A.c.CourseController [http-nio-8080-exec-3] Get course Called
+2020-07-03 17:19:24,406 INFO c.A.A.c.CourseController [http-nio-8080-exec-4] Get course Called
+2020-07-03 17:19:24,436 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-10] Get Assessment Called
+2020-07-03 17:19:24,436 INFO c.A.A.c.TraineeController [http-nio-8080-exec-9] Get All Trainee Called
+2020-07-03 17:19:24,446 INFO c.A.A.c.AcademicController [http-nio-8080-exec-5] Get Assessment Called with id AU0120
+2020-07-03 17:19:24,453 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-2] Get Assessment Called
+2020-07-03 17:19:24,454 INFO c.A.A.c.TraineeController [http-nio-8080-exec-7] Get All Trainee Called
+2020-07-03 17:19:24,479 INFO c.A.A.c.AcademicController [http-nio-8080-exec-8] Get Assessment Called with id AU0120
+2020-07-03 17:20:36,699 INFO c.A.A.c.CourseController [http-nio-8080-exec-10] Get course Called
+2020-07-03 17:20:36,707 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-9] Get Assessment Called
+2020-07-03 17:20:36,718 INFO c.A.A.c.CourseController [http-nio-8080-exec-5] Get course Called
+2020-07-03 17:20:36,718 INFO c.A.A.c.TraineeController [http-nio-8080-exec-2] Get All Trainee Called
+2020-07-03 17:20:36,733 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-7] Get Assessment Called
+2020-07-03 17:20:36,816 INFO c.A.A.c.TraineeController [http-nio-8080-exec-8] Get All Trainee Called
+2020-07-03 17:20:36,816 INFO c.A.A.c.AcademicController [http-nio-8080-exec-6] Get Assessment Called with id AU0120
+2020-07-03 17:20:36,827 INFO c.A.A.c.AcademicController [http-nio-8080-exec-3] Get Assessment Called with id AU0120
+2020-07-03 17:21:03,725 INFO c.A.A.c.CourseController [http-nio-8080-exec-4] Get course Called
+2020-07-03 17:21:03,725 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-1] Get Assessment Called
+2020-07-03 17:21:03,726 INFO c.A.A.c.TraineeController [http-nio-8080-exec-10] Get All Trainee Called
+2020-07-03 17:21:03,748 INFO c.A.A.c.AcademicController [http-nio-8080-exec-9] Get Assessment Called with id AU0120
+2020-07-03 17:21:03,754 INFO c.A.A.c.CourseController [http-nio-8080-exec-2] Get course Called
+2020-07-03 17:21:03,755 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-5] Get Assessment Called
+2020-07-03 17:21:03,756 INFO c.A.A.c.TraineeController [http-nio-8080-exec-7] Get All Trainee Called
+2020-07-03 17:21:03,781 INFO c.A.A.c.AcademicController [http-nio-8080-exec-6] Get Assessment Called with id AU0120
+2020-07-03 17:23:50,538 INFO c.A.A.c.CourseController [http-nio-8080-exec-4] Get course Called
+2020-07-03 17:23:50,548 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-9] Get Assessment Called
+2020-07-03 17:23:50,632 INFO c.A.A.c.AcademicController [http-nio-8080-exec-7] Get Assessment Called with id AU0120
+2020-07-03 17:23:50,632 INFO c.A.A.c.TraineeController [http-nio-8080-exec-2] Get All Trainee Called
+2020-07-03 17:23:50,641 INFO c.A.A.c.CourseController [http-nio-8080-exec-5] Get course Called
+2020-07-03 17:23:50,642 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-2] Get Assessment Called
+2020-07-03 17:23:50,685 INFO c.A.A.c.TraineeController [http-nio-8080-exec-8] Get All Trainee Called
+2020-07-03 17:23:50,685 INFO c.A.A.c.AcademicController [http-nio-8080-exec-3] Get Assessment Called with id AU0120
+2020-07-03 17:24:18,768 INFO c.A.A.c.CourseController [http-nio-8080-exec-1] Get course Called
+2020-07-03 17:24:18,768 INFO c.A.A.c.TraineeController [http-nio-8080-exec-4] Get All Trainee Called
+2020-07-03 17:24:18,837 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-10] Get Assessment Called
+2020-07-03 17:24:18,838 INFO c.A.A.c.AcademicController [http-nio-8080-exec-9] Get Assessment Called with id AU0120
+2020-07-03 17:24:18,883 INFO c.A.A.c.TraineeController [http-nio-8080-exec-7] Get All Trainee Called
+2020-07-03 17:24:18,883 INFO c.A.A.c.CourseController [http-nio-8080-exec-6] Get course Called
+2020-07-03 17:24:18,993 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-5] Get Assessment Called
+2020-07-03 17:24:18,995 INFO c.A.A.c.AcademicController [http-nio-8080-exec-2] Get Assessment Called with id AU0120
+2020-07-03 17:25:17,567 INFO c.A.A.c.CourseController [http-nio-8080-exec-3] Get course Called
+2020-07-03 17:25:17,575 INFO c.A.A.c.CourseController [http-nio-8080-exec-8] Get course Called
+2020-07-03 17:25:17,580 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-4] Get Assessment Called
+2020-07-03 17:25:17,590 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-1] Get Assessment Called
+2020-07-03 17:25:17,596 INFO c.A.A.c.TraineeController [http-nio-8080-exec-10] Get All Trainee Called
+2020-07-03 17:25:17,614 INFO c.A.A.c.TraineeController [http-nio-8080-exec-9] Get All Trainee Called
+2020-07-03 17:25:17,619 INFO c.A.A.c.AcademicController [http-nio-8080-exec-7] Get Assessment Called with id AU0120
+2020-07-03 17:25:17,652 INFO c.A.A.c.AcademicController [http-nio-8080-exec-6] Get Assessment Called with id AU0120
+2020-07-03 17:25:32,300 INFO c.A.A.c.CourseController [http-nio-8080-exec-3] Get course Called
+2020-07-03 17:25:32,317 INFO c.A.A.c.CourseController [http-nio-8080-exec-4] Get course Called
+2020-07-03 17:25:32,317 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-8] Get Assessment Called
+2020-07-03 17:25:32,328 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-1] Get Assessment Called
+2020-07-03 17:25:32,334 INFO c.A.A.c.TraineeController [http-nio-8080-exec-10] Get All Trainee Called
+2020-07-03 17:25:32,343 INFO c.A.A.c.AcademicController [http-nio-8080-exec-9] Get Assessment Called with id AU0120
+2020-07-03 17:25:32,371 INFO c.A.A.c.TraineeController [http-nio-8080-exec-7] Get All Trainee Called
+2020-07-03 17:25:32,371 INFO c.A.A.c.AcademicController [http-nio-8080-exec-6] Get Assessment Called with id AU0120
+2020-07-03 18:59:55,546 INFO c.A.A.c.CourseController [http-nio-8080-exec-8] Get course Called
+2020-07-03 18:59:55,546 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-4] Get Assessment Called
+2020-07-03 18:59:55,617 INFO c.A.A.c.AcademicController [http-nio-8080-exec-9] Get Assessment Called with id AU0120
+2020-07-03 18:59:55,624 INFO c.A.A.c.TraineeController [http-nio-8080-exec-10] Get All Trainee Called
+2020-07-03 18:59:55,686 INFO c.A.A.c.AcademicController [http-nio-8080-exec-1] Get Assessment Called with id AU0120
+2020-07-03 18:59:55,732 INFO c.A.A.c.TraineeController [http-nio-8080-exec-1] Get All Trainee Called
+2020-07-03 18:59:55,732 INFO c.A.A.c.CourseController [http-nio-8080-exec-6] Get course Called
+2020-07-03 18:59:55,797 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-2] Get Assessment Called
+2020-07-03 19:00:26,949 INFO c.A.A.c.CourseController [http-nio-8080-exec-3] Get course Called
+2020-07-03 19:00:26,970 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-5] Get Assessment Called
+2020-07-03 19:00:26,981 INFO c.A.A.c.CourseController [http-nio-8080-exec-9] Get course Called
+2020-07-03 19:00:26,987 INFO c.A.A.c.TraineeController [http-nio-8080-exec-8] Get All Trainee Called
+2020-07-03 19:00:26,999 INFO c.A.A.c.AcademicController [http-nio-8080-exec-10] Get Assessment Called with id AU0120
+2020-07-03 19:00:27,031 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-7] Get Assessment Called
+2020-07-03 19:00:27,033 INFO c.A.A.c.TraineeController [http-nio-8080-exec-6] Get All Trainee Called
+2020-07-03 19:00:27,037 INFO c.A.A.c.AcademicController [http-nio-8080-exec-7] Get Assessment Called with id AU0120

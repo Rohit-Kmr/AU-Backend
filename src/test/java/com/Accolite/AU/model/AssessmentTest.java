@@ -11,14 +11,17 @@ public class AssessmentTest {
 		
 		Assessment tester =new Assessment();
 		
-		tester.setAssessment_id("id1");
-		assertEquals("id1",tester.getAssessment_id());
+		tester.setAssessmentId("id1");
+		assertEquals("id1",tester.getAssessmentId());
 		
-		tester.setCourse_id("id2");
-		assertEquals("id2",tester.getCourse_id());
+		tester.setCourseId("id2");
+		assertEquals("id2",tester.getCourseId());
 		
-		tester.setAssessment_type("somename");
-		assertEquals("somename",tester.getAssessment_type());
+		tester.setAssessmentType("somename");
+		assertEquals("somename",tester.getAssessmentType());
+		
+		tester.setAssessmentName("Test name");
+		assertEquals("Test name",tester.getAssessmentName());
 		
 		tester.setWeightage1((float) 20.34);
 		assertEquals((float)20.34,(float)tester.getWeightage1());

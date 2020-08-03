@@ -10,12 +10,13 @@ public class AssessmentRowMapper implements RowMapper<Assessment>{
 	@Override
 	public Assessment mapRow(ResultSet rs, int rowNum) throws SQLException {
 		Assessment assessment=new Assessment();
-		assessment.setAssessment_id(rs.getString("Assessment_id"));
-		assessment.setAssessment_type(rs.getString("assessment_type"));
-		assessment.setCourse_id(rs.getString("course_id"));
+		assessment.setAssessmentId(rs.getString("assessmentId"));
+		assessment.setAssessmentType(rs.getString("assessmentType"));
+		assessment.setCourseId(rs.getString("courseId"));
 		assessment.setWeightage1(rs.getFloat("weightage1"));
 		assessment.setWeightage2(rs.getFloat("weightage2"));
 		assessment.setWeightage3(rs.getFloat("weightage3"));
+		assessment.setAssessmentName(rs.getString("assessmentName"));
 		return assessment;
 	}
 

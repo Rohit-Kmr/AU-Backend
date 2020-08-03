@@ -11,9 +11,9 @@ public class TrendsRowMapper implements RowMapper<Trends> {
 	public Trends mapRow(ResultSet rs, int rowNum) throws SQLException {
 		Trends trends=new Trends();
 		trends.setYear(rs.getString("year"));
-		trends.setTotal_courses(rs.getInt("total_courses"));
-		trends.setTotal_assessments(rs.getInt("total_assessments"));
-		trends.setAvarage_score(rs.getInt("avarage_score"));
+		trends.setTotalCourses(rs.getInt("totalCourses"));
+		trends.setTotalAssessments(rs.getInt("totalAssessments"));
+		trends.setAverageScore(rs.getInt("averageScore"));
 		return trends;
 	}
 

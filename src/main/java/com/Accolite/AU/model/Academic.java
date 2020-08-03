@@ -7,21 +7,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.IdClass;
 
-@Entity
-@IdClass(AcademicKey.class)
 public class Academic {
 	
-	String feedback;
-
-	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
-	@Column(name="candidate_id")
-	String candidate_id;
-	
-	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
-	@Column(name="course_id")
-	String course_id;
+	private String feedback;
+	private String candidateId;
+	private String courseId;
 	
 
 	public String getFeedback() {
@@ -31,28 +21,29 @@ public class Academic {
 	public void setFeedback(String feedback) {
 		this.feedback = feedback;
 	}
-
-	public String getCandidate_id() {
-		return candidate_id;
+	
+	public String getCandidateId() {
+		return candidateId;
 	}
 
-	public void setCandidate_id(String candidate_id) {
-		this.candidate_id = candidate_id;
+	public void setCandidateId(String candidateId) {
+		this.candidateId = candidateId;
 	}
 
-	public String getCourse_id() {
-		return course_id;
+	public String getCourseId() {
+		return courseId;
 	}
 
-	public void setCourse_id(String course_id) {
-		this.course_id = course_id;
+	public void setCourseId(String courseId) {
+		this.courseId = courseId;
 	}
 
-	public Academic(String feedback, String candidate_id, String course_id) {
+	
+	public Academic(String feedback, String candidateId, String courseId) {
 		super();
 		this.feedback = feedback;
-		this.candidate_id = candidate_id;
-		this.course_id = course_id;
+		this.candidateId = candidateId;
+		this.courseId = courseId;
 	}
 
 	public Academic() {

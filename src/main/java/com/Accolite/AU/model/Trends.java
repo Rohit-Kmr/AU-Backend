@@ -3,39 +3,42 @@ package com.Accolite.AU.model;
 public class Trends {
 	
 	String year;
-	int total_courses;
-	int total_assessments;
-	int avarage_score;
+	int totalCourses;
+	int totalAssessments;
+	int averageScore;
+	
 	public String getYear() {
 		return year;
 	}
 	public void setYear(String year) {
 		this.year = year;
 	}
-	public int getTotal_courses() {
-		return total_courses;
+	
+	public int getTotalCourses() {
+		return totalCourses;
 	}
-	public void setTotal_courses(int total_courses) {
-		this.total_courses = total_courses;
+	public void setTotalCourses(int totalCourses) {
+		this.totalCourses = totalCourses;
 	}
-	public int getTotal_assessments() {
-		return total_assessments;
+	public int getTotalAssessments() {
+		return totalAssessments;
 	}
-	public void setTotal_assessments(int total_assessments) {
-		this.total_assessments = total_assessments;
+	public void setTotalAssessments(int totalAssessments) {
+		this.totalAssessments = totalAssessments;
 	}
-	public int getAvarage_score() {
-		return avarage_score;
+	public int getAverageScore() {
+		return averageScore;
 	}
-	public void setAvarage_score(int avarage_score) {
-		this.avarage_score = avarage_score;
+	public void setAverageScore(int avarageScore) {
+		this.averageScore = avarageScore;
 	}
-	public Trends(String year, int total_courses, int total_assessments, int avarage_score) {
+	
+	public Trends(String year, int totalCourses, int totalAssessments, int avarageScore) {
 		super();
 		this.year = year;
-		this.total_courses = total_courses;
-		this.total_assessments = total_assessments;
-		this.avarage_score = avarage_score;
+		this.totalCourses = totalCourses;
+		this.totalAssessments = totalAssessments;
+		this.averageScore = avarageScore;
 	}
 	public Trends() {
 		super();

@@ -12,7 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.Accolite.AU.model.Assessment;
 import com.Accolite.AU.model.AssessmentRowMapper;
 
-@Transactional
+
 @Repository
 public class AssessmentDAO implements IAssessmentDAO{
 
@@ -21,16 +21,16 @@ public class AssessmentDAO implements IAssessmentDAO{
 	
 	@Override
 	public List<Assessment> getAllAssessment() {
-		String sql="SELECT assessment_id, course_id, assessment_type, weightage1, IFNULL(weightage2,0) as weightage2 , IFNULL(weightage3,0) as weightage3 FROM assessment";
+		String sql="SELECT assessmentId, courseId,assessmentName, assessmentType, weightage1, IFNULL(weightage2,0) as weightage2 , IFNULL(weightage3,0) as weightage3 FROM assessments";
 		RowMapper<Assessment> rowMapper=new AssessmentRowMapper();
 		return this.jdbcTemplate.query(sql, rowMapper);
 	}
 
 	@Override
-	public Assessment getAssessmentById(String assessment_id) {
-		String sql="SELECT assessment_id, course_id, assessment_type, weightage1, IFNULL(weightage2,0) as weightage2 , IFNULL(weightage3,0) as weightage3 FROM assessment WHERE assessment_id=?";
+	public Assessment getAssessmentById(String assessmentId) {
+		String sql="SELECT assessmentId, courseId,assessmentName, assessmentType, weightage1, IFNULL(weightage2,0) as weightage2 , IFNULL(weightage3,0) as weightage3 FROM assessments WHERE assessmentId=?";
 		RowMapper<Assessment> rowMapper=new BeanPropertyRowMapper<Assessment>(Assessment.class);
-		return this.jdbcTemplate.queryForObject(sql, rowMapper,assessment_id);
+		return this.jdbcTemplate.queryForObject(sql, rowMapper,assessmentId);
 	}
 
 /*	@Override
@@ -49,30 +49,30 @@ public class AssessmentDAO implements IAssessmentDAO{
 
 	@Override
 	public void addAssessment(String userid,Assessment assessment) {
-		String sql_log = "INSERT INTO assessment_log (timestamps,operation,userid,assessment_id, course_id, assessment_type, weightage1, weightage2, weightage3) VALUES (NOW(),'POST',?,?,?,?,?,?,?)";
-		jdbcTemplate.update(sql_log,userid,assessment.getAssessment_id(),assessment.getCourse_id(),assessment.getAssessment_type(),assessment.getWeightage1(),assessment.getWeightage2(),assessment.getWeightage3());		
+		String sql_log = "INSERT INTO assessment_log (timestamps,operation,userid,assessmentId, courseId,assessmentName, assessmentType, weightage1, weightage2, weightage3) VALUES (NOW(),'POST',?,?,?,?,?,?,?,?)";
+		jdbcTemplate.update(sql_log,userid,assessment.getAssessmentId(),assessment.getCourseId(),assessment.getAssessmentName(),assessment.getAssessmentType(),assessment.getWeightage1(),assessment.getWeightage2(),assessment.getWeightage3());		
+
 		
-		
-		String sql = "INSERT INTO assessment (assessment_id, course_id, assessment_type, weightage1, weightage2, weightage3) values (?,?,?,?,?,?)";
-		jdbcTemplate.update(sql,assessment.getAssessment_id(),assessment.getCourse_id(),assessment.getAssessment_type(),assessment.getWeightage1(),assessment.getWeightage2(),assessment.getWeightage3());		
+		String sql = "INSERT INTO assessments (assessmentId, courseId,assessmentName, assessmentType, weightage1, weightage2, weightage3) values (?,?,?,?,?,?,?)";
+		jdbcTemplate.update(sql,assessment.getAssessmentId(),assessment.getCourseId(),assessment.getAssessmentName(),assessment.getAssessmentType(),assessment.getWeightage1(),assessment.getWeightage2(),assessment.getWeightage3());		
 	}
 
 	@Override
 	public void updateAssessment(String userid,Assessment assessment) {
-		String sql_log = "INSERT INTO assessment_log (timestamps,operation,userid,assessment_id, course_id, assessment_type, weightage1, weightage2, weightage3) VALUES (NOW(),'PUT',?,?,?,?,?,?,?)";
-		jdbcTemplate.update(sql_log,userid,assessment.getAssessment_id(),assessment.getCourse_id(),assessment.getAssessment_type(),assessment.getWeightage1(),assessment.getWeightage2(),assessment.getWeightage3());	
+		String sql_log = "INSERT INTO assessment_log (timestamps,operation,userid,assessmentId, courseId,assessmentName, assessmentType, weightage1, weightage2, weightage3) VALUES (NOW(),'PUT',?,?,?,?,?,?,?,?)";
+		jdbcTemplate.update(sql_log,userid,assessment.getAssessmentId(),assessment.getCourseId(),assessment.getAssessmentName(),assessment.getAssessmentType(),assessment.getWeightage1(),assessment.getWeightage2(),assessment.getWeightage3());	
 		
-		String sql = "UPDATE assessment SET assessment_type=?, weightage1=?, weightage2=?, weightage3=? WHERE assessment_id=? AND course_id=?";
-		jdbcTemplate.update(sql,assessment.getAssessment_type(),assessment.getWeightage1(),assessment.getWeightage2(),assessment.getWeightage3(),assessment.getAssessment_id(),assessment.getCourse_id());		
+		String sql = "UPDATE assessments SET assessmentName=?, assessmentType=?, weightage1=?, weightage2=?, weightage3=? WHERE assessmentId=? AND courseId=?";
+		jdbcTemplate.update(sql,assessment.getAssessmentName(),assessment.getAssessmentType(),assessment.getWeightage1(),assessment.getWeightage2(),assessment.getWeightage3(),assessment.getAssessmentId(),assessment.getCourseId());		
 	}
 
 	@Override
-	public void deleteByAssessmentId(String userid,String assessment_id) {
-		String sql_log = "INSERT INTO assessment_log (timestamps,operation,userid,assessment_id) VALUES (NOW(),'DELETE',?,?)";
-		jdbcTemplate.update(sql_log,userid,assessment_id);	
+	public void deleteByAssessmentId(String userid,String assessmentId) {
+		String sql_log = "INSERT INTO assessment_log (timestamps,operation,userid,assessmentId) VALUES (NOW(),'DELETE',?,?)";
+		jdbcTemplate.update(sql_log,userid,assessmentId);	
 		
-		String sql="DELETE FROM assessment WHERE assessment_id=?";
-		jdbcTemplate.update(sql,assessment_id);
+		String sql="DELETE FROM assessments WHERE assessmentId=?";
+		jdbcTemplate.update(sql,assessmentId);
 	}
 
 }

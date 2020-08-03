@@ -1,0 +1,86 @@
+2020-06-28 23:49:44,487 INFO o.s.b.StartupInfoLogger [restartedMain] Starting AuApplication on DESKTOP-5DRKUTM with PID 14960 (C:\Users\Rohit\Documents\eclipse-work\AU\target\classes started by Rohit in C:\Users\Rohit\Documents\eclipse-work\AU)
+2020-06-28 23:49:44,502 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-06-28 23:49:44,592 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-06-28 23:49:44,592 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-06-28 23:49:46,663 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-28 23:49:46,714 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 37ms. Found 0 JPA repository interfaces.
+2020-06-28 23:49:48,142 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2020-06-28 23:49:48,161 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2020-06-28 23:49:48,162 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-06-28 23:49:48,163 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-06-28 23:49:48,384 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-06-28 23:49:48,385 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3792 ms
+2020-06-28 23:49:48,823 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2020-06-28 23:49:49,195 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2020-06-28 23:49:49,203 INFO o.s.b.a.h.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/au?useSSL=false'
+2020-06-28 23:49:49,601 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-28 23:49:49,692 INFO o.h.j.i.u.LogHelper [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-28 23:49:49,775 INFO o.h.Version [task-1] HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-06-28 23:49:50,026 INFO o.h.a.c.r.j.JavaReflectionManager [task-1] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-28 23:49:50,211 INFO o.h.d.Dialect [task-1] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-06-28 23:49:50,967 WARN o.h.m.RootClass [task-1] HHH000038: Composite-id class does not override equals(): com.Accolite.AU.model.AcademicKey
+2020-06-28 23:49:50,968 WARN o.h.m.RootClass [task-1] HHH000039: Composite-id class does not override hashCode(): com.Accolite.AU.model.AcademicKey
+2020-06-28 23:49:50,969 WARN o.h.m.RootClass [task-1] HHH000038: Composite-id class does not override equals(): com.Accolite.AU.model.TraineeKey
+2020-06-28 23:49:50,969 WARN o.h.m.RootClass [task-1] HHH000039: Composite-id class does not override hashCode(): com.Accolite.AU.model.TraineeKey
+2020-06-28 23:49:52,139 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-28 23:49:52,170 INFO o.s.o.j.AbstractEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-28 23:49:52,641 INFO o.s.b.d.a.OptionalLiveReloadServer [task-2] LiveReload server is running on port 35729
+2020-06-28 23:49:52,759 WARN o.s.d.r.w.h.HalBrowser [restartedMain] ---
+2020-06-28 23:49:52,760 WARN o.s.d.r.w.h.HalBrowser [restartedMain] Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2020-06-28 23:49:52,761 WARN o.s.d.r.w.h.HalBrowser [restartedMain] ---
+2020-06-28 23:49:52,860 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-28 23:49:53,594 WARN o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-06-28 23:49:54,484 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-06-28 23:49:54,613 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2020-06-28 23:49:54,681 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-28 23:49:54,683 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Triggering deferred initialization of Spring Data repositories…
+2020-06-28 23:49:54,684 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Spring Data repositories initialized!
+2020-06-28 23:49:54,705 INFO o.s.b.StartupInfoLogger [restartedMain] Started AuApplication in 10.719 seconds (JVM running for 12.523)
+2020-06-28 23:49:56,079 INFO o.a.j.l.DirectJDKLog [RMI TCP Connection(1)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-28 23:49:56,080 INFO o.s.w.s.FrameworkServlet [RMI TCP Connection(1)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2020-06-28 23:49:56,126 INFO o.s.w.s.FrameworkServlet [RMI TCP Connection(1)-127.0.0.1] Completed initialization in 45 ms
+2020-06-28 23:50:03,336 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-4] Get Assessment Called
+2020-06-28 23:50:03,336 INFO c.A.A.c.CourseController [http-nio-8080-exec-1] Get course Called
+2020-06-28 23:50:03,336 INFO c.A.A.c.CourseController [http-nio-8080-exec-3] Get course Called
+2020-06-28 23:50:03,336 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-2] Get Assessment Called
+2020-06-28 23:50:04,161 INFO c.A.A.c.CourseController [http-nio-8080-exec-5] Get course Called
+2020-06-28 23:50:04,190 INFO c.A.A.c.AssessmentController [http-nio-8080-exec-6] Get Assessment Called
+2020-06-28 23:51:18,329 INFO o.s.o.j.AbstractEntityManagerFactoryBean [Thread-349] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-28 23:51:18,334 INFO o.s.s.c.ExecutorConfigurationSupport [Thread-349] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-28 23:51:18,337 INFO c.z.h.HikariDataSource [Thread-349] HikariPool-1 - Shutdown initiated...
+2020-06-28 23:51:18,351 INFO c.z.h.HikariDataSource [Thread-349] HikariPool-1 - Shutdown completed.
+2020-06-28 23:51:18,885 INFO o.s.b.StartupInfoLogger [restartedMain] Starting AuApplication on DESKTOP-5DRKUTM with PID 14960 (C:\Users\Rohit\Documents\eclipse-work\AU\target\classes started by Rohit in C:\Users\Rohit\Documents\eclipse-work\AU)
+2020-06-28 23:51:18,887 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-06-28 23:51:19,558 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-28 23:51:19,575 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 16ms. Found 0 JPA repository interfaces.
+2020-06-28 23:51:19,830 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2020-06-28 23:51:19,830 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2020-06-28 23:51:19,831 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-06-28 23:51:19,831 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-06-28 23:51:19,900 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-06-28 23:51:19,901 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1009 ms
+2020-06-28 23:51:19,973 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2020-06-28 23:51:19,980 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2020-06-28 23:51:19,981 INFO o.s.b.a.h.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/au?useSSL=false'
+2020-06-28 23:51:20,070 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-28 23:51:20,088 INFO o.h.j.i.u.LogHelper [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-28 23:51:20,116 INFO o.h.d.Dialect [task-1] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-06-28 23:51:20,162 WARN o.h.m.RootClass [task-1] HHH000038: Composite-id class does not override equals(): com.Accolite.AU.model.AcademicKey
+2020-06-28 23:51:20,163 WARN o.h.m.RootClass [task-1] HHH000039: Composite-id class does not override hashCode(): com.Accolite.AU.model.AcademicKey
+2020-06-28 23:51:20,164 WARN o.h.m.RootClass [task-1] HHH000038: Composite-id class does not override equals(): com.Accolite.AU.model.TraineeKey
+2020-06-28 23:51:20,164 WARN o.h.m.RootClass [task-1] HHH000039: Composite-id class does not override hashCode(): com.Accolite.AU.model.TraineeKey
+2020-06-28 23:51:20,279 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-28 23:51:20,280 INFO o.s.o.j.AbstractEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-28 23:51:20,352 INFO o.s.b.d.a.OptionalLiveReloadServer [task-2] LiveReload server is running on port 35729
+2020-06-28 23:51:20,395 WARN o.s.d.r.w.h.HalBrowser [restartedMain] ---
+2020-06-28 23:51:20,395 WARN o.s.d.r.w.h.HalBrowser [restartedMain] Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2020-06-28 23:51:20,395 WARN o.s.d.r.w.h.HalBrowser [restartedMain] ---
+2020-06-28 23:51:20,417 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-28 23:51:20,542 WARN o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-06-28 23:51:20,865 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-06-28 23:51:20,889 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2020-06-28 23:51:20,895 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-28 23:51:20,896 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Triggering deferred initialization of Spring Data repositories…
+2020-06-28 23:51:20,897 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Spring Data repositories initialized!
+2020-06-28 23:51:20,908 INFO o.s.b.StartupInfoLogger [restartedMain] Started AuApplication in 2.09 seconds (JVM running for 98.726)
+2020-06-28 23:51:20,912 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged

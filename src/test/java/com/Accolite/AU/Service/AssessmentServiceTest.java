@@ -22,12 +22,12 @@ public class AssessmentServiceTest {
 
 	@Test
 	void testAddAssessment() {
-		tester.addAssessment("test",new Assessment("Type1",(float) 60.25,(float)57,(float) 75,"TU01","TAS00"));
+		tester.addAssessment("test",new Assessment("Type1",(float) 60.25,(float)57,(float) 75,"TU01","Test name","TAS00"));
 	}
 	
 	@Test
 	void testUpdateAssessment() {
-		tester.updateAssessment("test",new Assessment("Type2",(float) 60.25,(float)57,(float) 75,"TU01","TAS00"));
+		tester.updateAssessment("test",new Assessment("Type2",(float) 60.25,(float)57,(float) 75,"TU01","Test name","TAS00"));
 	}
 	
 	@Test

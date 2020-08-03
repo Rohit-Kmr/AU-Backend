@@ -4,6 +4,8 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -29,17 +31,23 @@ import com.Accolite.AU.model.Academic;
 @RequestMapping("/Academic")
 public class AcademicController {
 	
+	Logger log=LogManager.getLogger(AcademicController.class);
+	
 	@Autowired
 	IAcademicService academicService;
 	
 	@GetMapping("/getDetails")
 	public ResponseEntity<List<Academic>> getAllAcademicDetails(){
+
+		log.info("Get Academic Called");
 		List<Academic> list=academicService.getAllAcademic();
 		return new ResponseEntity<List<Academic>>(list,HttpStatus.OK);
 	}
 	
 	@GetMapping("/getDetails/{id}")
 	public ResponseEntity<List<Academic>> getAcademicDetailByCourse(@PathVariable("id") String id){
+
+		log.info("Get Academic Called with id "+id);
 		List<Academic> list=academicService.getAcademicByCourseid(id);
 		return new ResponseEntity<List<Academic>>(list,HttpStatus.OK);
 	}

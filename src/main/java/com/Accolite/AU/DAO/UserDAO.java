@@ -12,7 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.Accolite.AU.model.User;
 import com.Accolite.AU.model.UserRowMapper;
 
-@Transactional
+
 @Repository
 public class UserDAO implements IUserDAO {
 
@@ -21,14 +21,14 @@ public class UserDAO implements IUserDAO {
 	
 	@Override
 	public List<User> getAllUsers() {
-		String sql="SELECT * FROM user";
+		String sql="SELECT userId, name, type, email FROM user";
 		RowMapper<User> rowMapper=new UserRowMapper();
 		return this.jdbcTemplate.query(sql, rowMapper);
 	}
 
 	@Override
 	public User getUserByEmail(String email) {
-		String sql="SELECT user_id, name, type, email FROM user WHERE email=?";
+		String sql="SELECT userId, name, type, email FROM user WHERE email=?";
 		RowMapper<User> rowMapper=new BeanPropertyRowMapper<User>(User.class);
 		User user= jdbcTemplate.queryForObject(sql, rowMapper,email);
 		return user;

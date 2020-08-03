@@ -10,12 +10,13 @@ public class CourseRowMapper implements RowMapper<Course>{
 	@Override
 	public Course mapRow(ResultSet rs, int rowNum) throws SQLException {
 		Course course=new Course();
-		course.setCourseId(rs.getString("course_id"));
-		course.setCourseDesc(rs.getString("course_desc"));
-		course.setTrainer_id(rs.getString("trainer_id"));
+		course.setCourseId(rs.getString("courseId"));
+		course.setCourseDesc(rs.getString("courseDesc"));
+		course.setTrainerId(rs.getString("trainerId"));
 		course.setSkills(rs.getString("skills"));
 		course.setPrerequisite(rs.getString("prerequisite"));
-		course.setTrainer_name(rs.getString("trainer_name"));
+		course.setTrainerName(rs.getString("trainerName"));
+		course.setCourseName(rs.getString("courseName"));
 		return course;
 	}
 

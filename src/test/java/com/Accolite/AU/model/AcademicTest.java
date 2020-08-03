@@ -11,21 +11,23 @@ public class AcademicTest {
 	@Test
 	public void Candidatetest() {
 		
-		tester.setCandidate_id("id1");
-		assertEquals("id1",tester.getCandidate_id());
+		tester.setCandidateId("id1");
+		assertEquals("id1",tester.getCandidateId());
 	
-		tester.setCandidate_id("");
-		assertEquals("",tester.getCandidate_id());
+		tester.setCandidateId("");
+		assertEquals("",tester.getCandidateId());
 	}
 	
+	@Test
 	public void Coursetest() {
-		tester.setCourse_id("id2");
-		assertEquals("id2",tester.getCourse_id());
+		tester.setCourseId("id2");
+		assertEquals("id2",tester.getCourseId());
 	
-		tester.setCourse_id("");
-		assertEquals("",tester.getCourse_id());
+		tester.setCourseId("");
+		assertEquals("",tester.getCourseId());
 	}
-		
+	
+	@Test
 	public void Feedbacktest() {
 		
 		tester.setFeedback("something");
